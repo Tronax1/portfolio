@@ -1,0 +1,40 @@
+.HomeContent{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    top: 20%;
+    left: 20%;
+    font-size: 500%;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(24, 4, 4);
+}
+.background{
+    background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
+    margin-left: 8rem;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.GetStarted{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    text-decoration-line: none;
+    font-size: 250%;
+    font-family: 'Permanent Marker', cursive;
+    padding: 1%;
+    color: rgba(12, 95, 12, 2);
+    border-style: solid;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.GetStarted:hover{
+    background: rgb(27, 26, 26);
+    color:white;
+}
+
+
+
