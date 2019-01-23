@@ -11,7 +11,7 @@
 }
 .background{
     background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
-    margin-left: 8rem;
+    margin-left: 0;
 }
 img{
     height: 100%;
@@ -35,6 +35,10 @@ img{
     background: rgb(27, 26, 26);
     color:white;
 }
-
+@media only screen and (max-height: 365px) {
+    .background {
+        background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
+    }
+}
 
 
