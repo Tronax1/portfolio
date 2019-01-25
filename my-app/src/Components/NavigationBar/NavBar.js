@@ -10,8 +10,9 @@ const NavBar = () => {
                 < NavLink className = "Logo textHover" to = "/">TRONAX</NavLink >
                 <p/>
                 < NavLink className = "Spacing textHover" to="/About">About</NavLink >
-                < NavLink className = "Spacing textHover" to = "/Contact" > Contacts </NavLink >
+                < NavLink className = "Spacing textHover" to = "/Resume" > Resume </NavLink >
                 < NavLink className = "Spacing textHover" to = "/Projects" > Projects </NavLink >
+                < NavLink className = "Spacing textHover" to = "/Contact" > Contacts </NavLink >     
             </div>
         </div>
     );

@@ -57,7 +57,7 @@ p{
     }
     p {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 50rem;
     }
     .Spacing {
