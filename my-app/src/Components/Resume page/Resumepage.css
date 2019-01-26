@@ -6,27 +6,27 @@
     top: 5%;
     left: 10%;
     width: 60rem;   
+    padding: 2%;
 }
 .Formatting{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
-     font-family: 'Press Start 2P', cursive;
+    font-family: 'Courier New', Courier, monospace;
      letter-spacing: 2px;
 }
 #Header{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: rgb(231, 217, 18);
     letter-spacing: 2px;
 }
 #Contents{
-    font-size: 1rem;
+    font-size: 60%;
     text-align: left;
     color: white;
-    letter-spacing: 3px;
     line-height: 25px;
 }
 #Reserved{
-    color: rgb(90, 90, 194);
+    color: rgb(149, 149, 238);
 }
 #Header-two {
     color: rgb(175, 13, 13);
@@ -46,4 +46,18 @@
 }
 #Yellow{
     color: yellow;
+}
+#Magenta{
+    color: magenta;
+}
+@media only screen and (max-height: 365px) {
+    .ResumeContent {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 5%;
+        left: 10%;
+        height: 60rem;
+    }
 }

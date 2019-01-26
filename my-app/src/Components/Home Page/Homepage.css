@@ -1,3 +1,6 @@
+.lockdown{
+    position: fixed;
+}
 .HomeContent{
     display: flex;
     position: absolute;
