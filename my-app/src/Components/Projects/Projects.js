@@ -4,9 +4,11 @@ import "./Projectspage.css"
 
 const Projects = () => {
     return ( 
-        <div className="ProjectContent">
-            Test page for Projects 
-        </div>
+        <React.Fragment>
+            <div className="ProjectContent">
+                Test page for Projects 
+            </div>
+        </React.Fragment>
     );
 }
 

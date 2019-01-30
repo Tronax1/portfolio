@@ -4,9 +4,11 @@ import "./Aboutpage.css"
 
 const About = () => {
     return (
-        <div className="AboutContent">
-            Test page for about
-        </div>
+        <React.Fragment>
+            <div className="AboutContent">
+                Test page for about
+            </div>
+        </React.Fragment>
     );
 }
 

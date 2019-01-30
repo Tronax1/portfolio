@@ -4,9 +4,11 @@ import "./Contactspage.css"
 
 const Contact = () => {
     return ( 
-        <div className="ContactsContent" >
-            Test page for Contact
-        </div>
+        <React.Fragment>
+            <div className="ContactsContent" >
+                Test page for Contact
+            </div>
+        </React.Fragment>
     );
 }
 
