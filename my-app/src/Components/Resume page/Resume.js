@@ -1,8 +1,22 @@
-import React from 'react'
+
+import React, { Component } from 'react';
+
 
 import './Resumepage.css'
+import Modal from './Modal/Modal'
+import CV from './Resume pic.png'
 
-const Resume = ()=>{
+class Resume extends Component{
+       state = {
+           show: false
+       }
+       showModal = () => {
+           this.setState({
+               ...this.state,
+               show: !this.state.show
+           });
+       }
+    render(){
     return(
         <React.Fragment>
             <div className="ResumeContent"> 
@@ -65,8 +79,15 @@ const Resume = ()=>{
                     <span id = "Contents">&#125;</span>
                 </p>
             </div>
+            <input className="button" type="button"
+            onClick={this.showModal}
+             value="View PDF"/>
+            <Modal onClose={this.showModal} show={this.state.show}>
+                <img src={CV} alt=""/>
+            </Modal>
         </React.Fragment >
     );
+    }
 }
 
 export default Resume;

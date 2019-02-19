@@ -8,7 +8,6 @@ import Projects from "./Components/Projects/Projects"
 import NavBar from "./Components/NavigationBar/NavBar"
 import Resume from "./Components/Resume page/Resume"
 
-
 class App extends Component {
   render() {
     return (

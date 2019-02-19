@@ -8,12 +8,18 @@
     width: 60rem;   
     padding: 2%;
 }
+.button{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
 .Formatting{
     font-size: 2.5rem;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
      letter-spacing: 2px;
 }
+
 #Header{
     font-size: 2.75rem;
     color: rgb(231, 217, 18);
@@ -49,6 +55,13 @@
 }
 #Magenta{
     color: magenta;
+}
+#PDF{
+    position: relative;
+    top: 10rem;
+    right: -40rem;
+    padding: 1rem;
+    border-radius: 10%;
 }
 @media only screen and (max-height: 365px) {
     .ResumeContent {
