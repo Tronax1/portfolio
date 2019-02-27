@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 import './Modal.css'
 
-export default class Modal extends React.Component{
+export default class Modal extends Component{
     onClose = (e)=>{
         this.props.onClose && this.props.onClose(e);
     }

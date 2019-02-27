@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import "./Projectspage.css"
 
-const Projects = () => {
-    return ( 
-        <React.Fragment>
+export default class Projects extends Component {
+  render() {
+    return (
+      <React.Fragment>
             <div className="ProjectContent">
                 Test page for Projects 
             </div>
         </React.Fragment>
-    );
+    )
+  }
 }
-
-export default Projects;

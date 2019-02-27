@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import "./Aboutpage.css"
 
-const About = () => {
+export default class About extends Component {
+  render() {
     return (
-        <React.Fragment>
+      <React.Fragment>
             <div className="AboutContent">
                 Test page for about
             </div>
         </React.Fragment>
-    );
+    )
+  }
 }
-
-export default About;
-

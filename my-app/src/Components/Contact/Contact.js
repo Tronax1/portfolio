@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import "./Contactspage.css"
 
-const Contact = () => {
-    return ( 
+export default class Contact extends Component {
+  render() {
+    return (
+      <div>
         <React.Fragment>
             <div className="ContactsContent" >
                 Test page for Contact
             </div>
         </React.Fragment>
-    );
+      </div>
+    )
+  }
 }
 
-export default Contact;

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+
 import {NavLink} from 'react-router-dom'
 
 import Mountain from './SnowMountains.jpg'
@@ -6,9 +7,10 @@ import Mountain from './SnowMountains.jpg'
 import "./Homepage.css"
 import "./Snow.scss"
 
-const Home = () => {
+export default class Home extends Component {
+  render() {
     return (
-        <React.Fragment>
+      <React.Fragment>
             <div className="lockdown">
                 <div className="background">
                     < div className = "Snow layer1 a" / >
@@ -25,7 +27,6 @@ const Home = () => {
                 <img src={Mountain} alt=""/>
             </div>
         </React.Fragment >
-    );
+    )
+  }
 }
-
-export default Home;

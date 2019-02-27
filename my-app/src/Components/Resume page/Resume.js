@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 
@@ -6,7 +5,7 @@ import './Resumepage.css'
 import Modal from './Modal/Modal'
 import CV from './Resume pic.png'
 
-class Resume extends Component{
+export default class Resume extends Component{
        state = {
            show: false
        }
@@ -90,4 +89,4 @@ class Resume extends Component{
     }
 }
 
-export default Resume;
+

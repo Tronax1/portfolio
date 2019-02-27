@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 
 import "./NavDesign.css"
 
-const NavBar = () => {
-    return(
-        <React.Fragment>
+export default class NavBar extends Component {
+  render() {
+    return (
+      <React.Fragment>
             <div className="Nav">
                 < div className = "Nav-flex" >
                     <div className = "Brand">
@@ -20,7 +21,6 @@ const NavBar = () => {
                 </div>
             </div>
         </React.Fragment>
-    );
+    )
+  }
 }
-
-export default NavBar;
