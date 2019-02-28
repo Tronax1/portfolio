@@ -4,3 +4,20 @@
     justify-content: center;
     margin-top: 5rem;
 }
+.Projects{
+    text-decoration-line: none;
+    font-size: 250%;
+    font-family: 'Permanent Marker', cursive;
+    padding: 1%;
+    color: rgba(12, 95, 12, 2);
+    border-style: solid;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0.8);
+    height: 15rem;
+    width: 15rem;
+}
+.Projects:hover{
+    background: rgb(27, 26, 26);
+    color:white;
+}
