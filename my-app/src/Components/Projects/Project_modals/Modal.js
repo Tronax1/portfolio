@@ -5,7 +5,7 @@ import './Modal.css'
 export default class Modal extends Component{
     onClose = (e)=>{
         this.props.onClose && this.props.onClose(e);
-    }
+    }   
     render(){
         if(!this.props.show){
             return null;
@@ -20,7 +20,7 @@ export default class Modal extends Component{
                                 </button>
                         </div>
                         <div className="Body">
-                            {this.props.children}
+                            {this.props.info}
                         </div>    
                     </div>    
                 </div>
