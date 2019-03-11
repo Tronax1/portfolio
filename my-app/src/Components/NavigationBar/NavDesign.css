@@ -23,6 +23,10 @@
 .textHover:active{
     background: white;
 }
+.textHover:hover{
+    background: white;
+    transition: 0.5s
+}
 p {
     display: flex;
     flex-direction: column;
