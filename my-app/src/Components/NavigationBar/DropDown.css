@@ -1,0 +1,13 @@
+.Dropdown {
+    position: fixed;
+    margin-top: 43px;
+    background: black;
+    z-index: 9999;
+}
+
+.ElementsDrop {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    width: 25rem;
+}

@@ -1,97 +1,137 @@
-.Nav{
-    position:fixed;
-    top:0;
+.Nav {
+    position: fixed;
+    top: 0;
     box-sizing: border-box;
     justify-content: center;
-    padding-right: 100px;
-    padding-bottom: 0;
+    padding-bottom: 43px;
     background: rgb(8, 7, 7);
-    height: 100%;
-    width: 1rem;
+    height: 1rem;
+    width: 100%;
     z-index: 9999;
 }
-.Nav-flex{
+.Nav-flex {
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    flex-direction: row;
     align-items: flex-start;
-    padding-right: 100px; 
-    height: 100%;
-    justify-content: center;
-}
-.Elements{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60%;
-    left: 0.3%;
-}
-.Spacing {
-    padding: 1.5rem;
-    border-radius: 7%;
+    padding: 1rem;
+    width: 100%;
 }
 
-.Logo{
+p {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 50rem;
+}
+
+.Logo {
     position: absolute;
     top: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
-    padding: 1.2rem;
     border-radius: 7%;
-    
 }
-.Brand {
-    position: absolute;
+.Hamburger{
+    position: fixed;
     top: 0;
+    right: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: black;
+    margin-right: 10px;
+    margin-top: 3px;
+    border-radius: 15%;
 }
-.textHover:hover{ 
-    color: black;
-    background-color: white;
-    transition: 0.5s;
+.Hamburger:active{
+    background: white;
 }
-.textHover{
-    color: rgb(170, 180, 180);
-    text-decoration-line: none;
+
+.Spacing {
+    margin-left: 3rem;
 }
-p{
-    display:flex;
-    flex-direction: column;
-    height: 50rem;
+
+.Elements {
+    flex-direction: row;
+    top: 0;
+    left: 60%;
+    display: none;
 }
-@media only screen and (max-height: 365px){
+
+.Brand {
+    top: 0;
+    left: 0;
+}
+#Line{
+     width: 25px;
+     height: 3px;
+     background-color: white;
+     margin: 6px 0;
+}
+@media only screen and (min-width: 768px) {
     .Nav {
         position: fixed;
         top: 0;
         box-sizing: border-box;
         justify-content: center;
-        padding-bottom: 60px;
+        padding-right: 100px;
+        padding-bottom: 0;
         background: rgb(8, 7, 7);
-        height: 1rem;
-        width: 100%;
+        height: 100%;
+        width: 1rem;
+        z-index: 9999;
     }
+
     .Nav-flex {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        box-sizing: border-box;
         align-items: flex-start;
-        padding: 1rem;
-        width: 100%;
+        padding-right: 100px;
+        height: 100%;
+        justify-content: center;
     }
-    p{
+
+    .Elements {
         display: flex;
         flex-direction: column;
-        width: 50rem;
-        height: 50rem;
+        position: absolute;
+        top: 60%;
+        left: 0.3%;
     }
+
     .Spacing {
-        margin-left: 3rem;
+        padding: 1.5rem;
+        border-radius: 7%;
     }
-    .Elements{
-        flex-direction: row;
+
+    .Logo {
+        position: absolute;
         top: 0;
-        left: 60%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100%;
+        padding: 1.2rem;
+        border-radius: 7%;
     }
-    .Brand{
+
+    .Brand {
+        position: absolute;
         top: 0;
-        left: 0;
+    }
+
+    .textHover:hover {
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .textHover {
+        color: rgb(170, 180, 180);
+        text-decoration-line: none;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
     }
 }
