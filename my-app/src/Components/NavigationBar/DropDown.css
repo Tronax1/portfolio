@@ -3,11 +3,20 @@
     margin-top: 43px;
     background: black;
     z-index: 9999;
+    border-top: solid;
+    border-top-color: rgb(100, 100, 100);
 }
 
 .ElementsDrop {
     display: flex;
     flex-direction: column;
-    justify-items: left;
     width: 25rem;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .Dropdown{
+        display: none;
+    }
 }

@@ -11,10 +11,10 @@ export default class DropDown extends Component {
     return (
       <div className="Dropdown">
                 <div className="ElementsDrop">
-                        < NavLink className = "textHover" to="/About">About</NavLink >
-                        < NavLink className = "textHover" to = "/Resume" > Resume </NavLink >
-                        < NavLink className = "textHover" to = "/Projects" > Projects </NavLink >
-                        < NavLink className = "textHover" to = "/Contact" > Contact </NavLink >     
+                        < NavLink className = "textHover Spacing" to="/About">About</NavLink >
+                        < NavLink className = "textHover Spacing" to = "/Resume" > Resume </NavLink >
+                        < NavLink className = "textHover Spacing" to = "/Projects" > Projects </NavLink >
+                        < NavLink className = "textHover Spacing" to = "/Contact" > Contact </NavLink >     
                 </div>
       </div>
     )
