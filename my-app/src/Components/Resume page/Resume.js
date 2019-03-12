@@ -24,7 +24,7 @@ export default class Resume extends Component{
                     < span id = "Contents" > <span id="Magenta">#include</span><span id="orange">&lt;iostream&gt;</span></span>
                     < span id = "Contents" > <span id="Magenta">#include</span><span id="orange">&lt;stdio.h&gt;</span></span><br/>
 
-                    < span id = "Contents" >Using <span id="lightBlue">namespace</span> std;</span><br/>
+                    < span id = "Contents" >using <span id="lightBlue">namespace</span> std;</span><br/>
 
                     < span id = "Contents" ><span id="Types">int</span> main() &#123;</span>
 

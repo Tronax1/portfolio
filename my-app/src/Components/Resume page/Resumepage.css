@@ -1,27 +1,27 @@
 .ResumeContent {
     display: flex;
     position: absolute;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: left;
     top: 5%;
-    left: 10%;
-    width: 60rem;   
-    padding: 2%;
+    left: 5%;
+    height: 60rem;
 }
 .button{
     position: absolute;
-    top: 5%;
-    left: 80%;
+    bottom: 0;
+    left: 0;
 }
 .Formatting{
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
-     letter-spacing: 2px;
+    letter-spacing: 2px;
+    width: 80vw;
 }
 
 #Header{
-    font-size: 2.75rem;
+    font-size: 1.5rem;
     color: rgb(231, 217, 18);
     letter-spacing: 2px;
 }
@@ -48,7 +48,7 @@
     color: orange;
 }
 #Indent{
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 #Yellow{
     color: yellow;
@@ -63,14 +63,84 @@
     padding: 1rem;
     border-radius: 10%;
 }
-@media only screen and (max-height: 365px) {
+@media only screen and (min-width: 768px) {
+    
     .ResumeContent {
         display: flex;
         position: absolute;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         top: 5%;
         left: 10%;
-        height: 60rem;
+        width: 60rem;
+        padding: 2%;
+    }
+
+    .button {
+        position: absolute;
+        top: 5%;
+        left: 80%;
+        height: 20px;
+    }
+
+    .Formatting {
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2px;
+    }
+
+    #Header {
+        font-size: 2.75rem;
+        color: rgb(231, 217, 18);
+        letter-spacing: 2px;
+    }
+
+    #Contents {
+        font-size: 60%;
+        text-align: left;
+        color: white;
+        line-height: 25px;
+    }
+
+    #Reserved {
+        color: rgb(149, 149, 238);
+    }
+
+    #Header-two {
+        color: rgb(175, 13, 13);
+        letter-spacing: 2px;
+    }
+
+    #Types {
+        color: green;
+    }
+
+    #lightBlue {
+        color: rgb(106, 160, 20);
+    }
+
+    #orange {
+        color: orange;
+    }
+
+    #Indent {
+        margin-left: 5rem;
+    }
+
+    #Yellow {
+        color: yellow;
+    }
+
+    #Magenta {
+        color: magenta;
+    }
+
+    #PDF {
+        position: relative;
+        top: 10rem;
+        right: -40rem;
+        padding: 1rem;
+        border-radius: 10%;
     }
 }

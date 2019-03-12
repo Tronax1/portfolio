@@ -55,6 +55,9 @@ p {
 .Hamburger:active{
     background: white;
 }
+.Hamburger:focus{
+    outline: 0;
+}
 
 .Elements {
     display: none;
