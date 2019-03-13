@@ -1,6 +1,8 @@
 .ContactsContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }

@@ -1,12 +1,45 @@
+.Gradient{
+         background: linear-gradient(270deg, #663324, #245d66, #5f6624);
+         background-size: 600% 600%;
+
+         -webkit-animation: AnimationName 8s ease infinite;
+         -moz-animation: AnimationName 8s ease infinite;
+         animation: AnimationName 8s ease infinite;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60rem;
+    }
+     @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
 .ProjectContent {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin-left: 40px;
+    height: 50rem;
 }
 .Projects{
     text-decoration-line: none;
-    font-size: 250%;
+    font-size: 200%;
     font-family: 'Permanent Marker', cursive;
     padding: 1%;
     color: rgba(12, 95, 12, 2);
@@ -14,10 +47,26 @@
     border-radius: 10px;
     transition: 0.3s;
     background-color: rgba(0,0,0,0.8);
-    height: 15rem;
+    height: 10rem;
     width: 15rem;
 }
 .Projects:hover{
     background: rgb(27, 26, 26);
     color:white;
+}
+@media only screen and (min-width: 768px){
+    .ProjectContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        margin-left: 3rem;
+        width: 70rem;
+        height: 25rem;
+    }
+    .Gradient{
+        height: 39rem;
+    }
 }

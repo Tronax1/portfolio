@@ -1,6 +1,26 @@
 .AboutContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+    margin-right: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (min-width: 768px){
+    .AboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        text-align: center;
+        margin-right: 10rem;
+        margin-left: 10rem;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
