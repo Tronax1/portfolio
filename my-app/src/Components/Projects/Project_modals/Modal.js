@@ -15,13 +15,19 @@ export default class Modal extends Component{
                 <div className = "Background">
                     <div className="Contents">
                         <div className="Header">
-                            <button onClick = {(e) => {this.onClose(e)}}>
-                                    Close
+                            <button className = "Close" onClick = {(e) => {this.onClose(e)}}>
+                                    < i className = "fas fa-times fa-2x" > </i>
                                 </button>
                         </div>
                         <div className="Body">
+                            <img className= "ModalImg" src={this.props.img} alt=""/>
                             {this.props.info}
                         </div>    
+                        <div className="Footer">
+                            < a className = "Repos" href = {this.props.repo}>
+                                View source < i className = "fab fa-github fa-2x" > </i>
+                            </a>
+                        </div>
                     </div>    
                 </div>
             </React.Fragment>

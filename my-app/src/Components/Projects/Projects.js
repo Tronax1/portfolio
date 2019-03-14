@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
+
 import "./Projectspage.css"
 import Modal from "./Project_modals/Modal"
+import Aldebaran from "./Aldebaran.jpg"
+import Calculator from "./Calculator.jpg"
 
 export default class Projects extends Component {
     constructor(props){
@@ -40,7 +43,7 @@ export default class Projects extends Component {
           <div className="Gradient">
               <div className = "ProjectContent">
                   <button className = "Projects" onClick={this.showModal}>
-                    Discord Bot
+                    Aldebaran
                   </button>
                   <button className = "Projects" onClick={this.showModal2}>
                     Array Multiplier
@@ -51,10 +54,16 @@ export default class Projects extends Component {
                   <button className = "Projects" onClick={this.showModal4}>
                     Tic-Tac-Toe
                   </button>
-                  <Modal onClose={this.showModal} show={this.state.show} info="DiscordBot"/>
+                  <Modal onClose={this.showModal} show={this.state.show} img={Aldebaran} 
+                    info="This is a discord bot application
+                    that plays music from a youtube playlist, it also acts like a basic dictionary
+                    and displays your osu! statistics."
+                    repo = "https://github.com/Tronax1/Aldebaran-" / >
                   <Modal onClose={this.showModal2} show={this.state.show2} info="Array Multiplier"/>
-                  <Modal onClose={this.showModal3} show={this.state.show3} info="Scientific Calculator"/>
-                  <Modal onClose={this.showModal4} show={this.state.show4} info="Tic-Tac-Toe"/>
+                  <Modal onClose={this.showModal3} show={this.state.show3} img={Calculator} info="Scientific Calculator"
+                    repo = "https://github.com/Tronax1/Calculator" / >
+                  <Modal onClose={this.showModal4} show={this.state.show4} info="Tic-Tac-Toe"
+                    repo = "https://github.com/Tronax1/Tic-Tac-Toe" / >
               </div>
             </div>
         </React.Fragment>

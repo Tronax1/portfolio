@@ -50,6 +50,9 @@
     height: 10rem;
     width: 15rem;
 }
+.Projects:focus{
+    outline: 0;
+}
 .Projects:hover{
     background: rgb(27, 26, 26);
     color:white;

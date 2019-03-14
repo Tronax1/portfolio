@@ -23,3 +23,34 @@
     right: 10%;
     top: 5%;
 }
+.ModalImg{
+    height: 50vw;
+    width: 70vw;
+    object-fit: cover;
+}
+.Repos{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    text-decoration-line: none;
+    border-style: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10%;
+}
+.Repos:hover{
+    background: black;
+}
+.Close{
+    background: none;
+    border: none;
+}
+.Close:focus{
+    outline: 0;
+}
+.fa-times{
+    color: gray;
+}
+.fa-times:hover {
+    color: white;
+}
