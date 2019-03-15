@@ -1,13 +1,18 @@
+.Body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 120%;
+}
 .Background{
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
     transition-duration: 0.5s;
 }
+
 .Contents{
     position: absolute;
     top: 10%;
@@ -27,6 +32,7 @@
     height: 50vw;
     width: 70vw;
     object-fit: cover;
+    margin-bottom: 2rem;
 }
 .Repos{
     display: flex;

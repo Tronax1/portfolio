@@ -60,9 +60,12 @@ export default class Projects extends Component {
                     and displays your osu! statistics."
                     repo = "https://github.com/Tronax1/Aldebaran-" / >
                   <Modal onClose={this.showModal2} show={this.state.show2} info="Array Multiplier"/>
-                  <Modal onClose={this.showModal3} show={this.state.show3} img={Calculator} info="Scientific Calculator"
+                  <Modal onClose={this.showModal3} show={this.state.show3} img={Calculator} 
+                  info="This is a scientific calculator that performs the basic arirthmetic operations
+                  as well as additional trigonometric functions such as sine, cosine and tangent."
                     repo = "https://github.com/Tronax1/Calculator" / >
-                  <Modal onClose={this.showModal4} show={this.state.show4} info="Tic-Tac-Toe"
+                  <Modal onClose={this.showModal4} show={this.state.show4} info="Simple Tic-Tac-Toe game
+                  that allows the player to compete against the computer or against another human."
                     repo = "https://github.com/Tronax1/Tic-Tac-Toe" / >
               </div>
             </div>
