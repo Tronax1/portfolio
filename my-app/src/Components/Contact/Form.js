@@ -6,19 +6,18 @@ export default class Form extends Component {
   render() {
     return (
       <div>
-        <h1>Contact me</h1>
-            <form>
+            <form className="align">
                 <label>
-                 Name <input type="text" name="name"></input>
+                 <input type="text" className="format" placeholder = "Name"></input>
                 </label>
                 <label>
-                Email <input type="text" name="name"></input>
+                 <input type="text" className="format" placeholder = "Email"></input>
                 </label>
                 <label>
-                Subject <input type="text" name="name"></input>
+                  <input type="text" className="format" placeholder = "Subject"></input>
                 </label>
                 <label>
-                Message <input type="text" name="name"></input>
+                  <input type="text" className="format message" placeholder= "Message"></input>
                 </label>
             </form>
       </div>
