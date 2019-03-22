@@ -9,8 +9,15 @@
 }
 .button{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -1480px;
+    left: 30%;
+    text-decoration-line: none;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(12, 95, 12, 2);
+    border-style: solid;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 .Formatting{
     font-size: 1.5rem;
@@ -78,9 +85,8 @@
 
     .button {
         position: absolute;
-        top: 5%;
-        left: 80%;
-        height: 20px;
+        bottom: -95vw;
+        left: 40%;
     }
 
     .Formatting {

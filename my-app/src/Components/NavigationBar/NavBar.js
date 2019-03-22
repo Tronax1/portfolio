@@ -22,7 +22,7 @@ export default class NavBar extends Component {
             <div className="Nav">
                 < div className = "Nav-flex" >
                     <div className = "Brand">
-                        < NavLink className = "textHover Logo" to = "/">TRONAX</NavLink >
+                        < NavLink className = "textHover Logo" to = "/">JV</NavLink >
                     </div>   
                     <div className="Elements">
                         < NavLink className = "Spacing textHover" to="/About">About</NavLink >

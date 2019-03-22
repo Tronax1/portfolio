@@ -8,16 +8,19 @@ export default class Form extends Component {
       <div>
             <form className="align">
                 <label>
-                 <input type="text" className="format" placeholder = "Name"></input>
+                 <input type="text" className="format" placeholder = "Name"/>
                 </label>
                 <label>
-                 <input type="text" className="format" placeholder = "Email"></input>
+                 <input type="text" className="format" placeholder = "Email"/>
                 </label>
                 <label>
-                  <input type="text" className="format" placeholder = "Subject"></input>
+                  <input type="text" className="format" placeholder = "Subject"/>
                 </label>
                 <label>
-                  <input type="text" className="format message" placeholder= "Message"></input>
+                  <input type="text" className="format message" placeholder= "Message"/>
+                </label>
+                <label>
+                  <button className="submitForm">Submit</button>
                 </label>
             </form>
       </div>

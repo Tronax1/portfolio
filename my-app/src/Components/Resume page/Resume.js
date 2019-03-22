@@ -28,7 +28,7 @@ export default class Resume extends Component{
 
                     < span id = "Contents" ><span id="Types">int</span> main() &#123;</span>
 
-                    <span id="Header"><strong>Tronax Magneghost</strong></span><br/>
+                    <span id="Header"><strong>Jorge Villarreal</strong></span><br/>
 
                     < span id = "Header-two" > <strong>Education</strong> </span> < br / >
                     <span id="Contents"><strong><span id="Reserved">Bachelor of Science:</span></strong> Computer Engineering, 

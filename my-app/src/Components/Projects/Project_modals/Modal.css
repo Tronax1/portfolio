@@ -42,7 +42,8 @@
     border-style: solid;
     margin-left: 20%;
     margin-right: 20%;
-    border-radius: 10%;
+    border-radius: 20px;
+    width: 50%;
 }
 .Repos:hover{
     background: black;
@@ -59,4 +60,10 @@
 }
 .fa-times:hover {
     color: white;
+}
+@media only screen and (min-width: 768px) {
+    .Repos{
+        width: 20%;
+        margin-left: 40%;
+    }
 }
