@@ -11,6 +11,7 @@ import Resume from "./Components/Resume page/Resume"
 class App extends Component {
   render() {
     return (
+      
       <BrowserRouter>
         <React.Fragment>
           <NavBar/>

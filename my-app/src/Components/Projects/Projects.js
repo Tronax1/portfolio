@@ -5,6 +5,7 @@ import "./Projectspage.css"
 import Modal from "./Project_modals/Modal"
 import Aldebaran from "./Aldebaran.jpg"
 import Calculator from "./Calculator.jpg"
+import Delay from "../Animation/Delay"
 
 export default class Projects extends Component {
     constructor(props){
@@ -40,6 +41,7 @@ export default class Projects extends Component {
   render() {
     return (
       <React.Fragment>
+          <Delay/>
           <div className="Gradient">
               <div className = "ProjectContent">
                   <button className = "Projects" onClick={this.showModal}>

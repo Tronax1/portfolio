@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Delay from "../Animation/Delay"
 
 import "./Aboutpage.css"
 
@@ -6,6 +7,7 @@ export default class About extends Component {
   render() {
     return (
       <React.Fragment>
+          <Delay/>
           <div className="dark"/>
           <div id ="back"/>
           <div id ="front"/>

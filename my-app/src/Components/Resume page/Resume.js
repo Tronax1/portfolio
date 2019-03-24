@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import './Resumepage.css'
 import Modal from './Modal/Modal'
+import Delay from "../Animation/Delay"
 import CV from './Resume pic.png'
 
 export default class Resume extends Component{
@@ -18,6 +19,7 @@ export default class Resume extends Component{
     render(){
     return(
         <React.Fragment>
+            <Delay/>
             <div className="ResumeContent"> 
                 <p className="Formatting">
                 
