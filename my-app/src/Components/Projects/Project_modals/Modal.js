@@ -24,7 +24,8 @@ export default class Modal extends Component{
                             {this.props.info}
                         </div>    
                         <div className="Footer">
-                            < a className = "Repos" href = {this.props.repo}>
+                            < a className = "Repos" rel = "noopener noreferrer" 
+                            target ="_blank" href = {this.props.repo}>
                                 View source < i className = "fab fa-github fa-2x" > </i>
                             </a>
                         </div>
