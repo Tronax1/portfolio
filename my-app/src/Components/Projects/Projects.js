@@ -44,16 +44,16 @@ export default class Projects extends Component {
           <Delay/>
           <div className="Gradient">
               <div className = "ProjectContent">
-                  <button className = "Projects" onClick={this.showModal}>
+                  <button id = "aldebaran" className = "Projects" onClick={this.showModal}>
                     Aldebaran
                   </button>
-                  <button className = "Projects" onClick={this.showModal2}>
+                  <button id = "multiplier" className = "Projects" onClick={this.showModal2}>
                     Array Multiplier
                   </button>
-                  <button className = "Projects" onClick={this.showModal3}>
+                  <button id = "calculator" className = "Projects" onClick={this.showModal3}>
                     Scientific Calculator
                   </button>
-                  <button className = "Projects" onClick={this.showModal4}>
+                  <button id = "tictac" className = "Projects" onClick={this.showModal4}>
                     Tic-Tac-Toe
                   </button>
                   <Modal onClose={this.showModal} show={this.state.show} img={Aldebaran} 

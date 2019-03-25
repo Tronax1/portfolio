@@ -50,6 +50,7 @@
     height: 10rem;
     width: 15rem;
     box-shadow: 5px 10px 18px red;
+    opacity: 0;
 }
 .Projects:focus{
     outline: 0;
@@ -57,6 +58,18 @@
 .Projects:hover{
     background: rgb(27, 26, 26);
     color:white;
+}
+#aldebaran{
+    animation: vision 0.5s ease-in 0.5s 1 forwards;
+}
+#multiplier{
+    animation: vision 0.5s ease-in 0.6s 1 forwards;
+}
+#calculator{
+    animation: vision 0.5s ease-in 0.7s 1 forwards;
+}
+#tictac{
+    animation: vision 0.5s ease-in 0.8s 1 forwards;
 }
 @media only screen and (min-width: 768px){
     .ProjectContent {

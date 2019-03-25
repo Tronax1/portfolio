@@ -37,7 +37,7 @@ export default class NavBar extends Component {
                     </button>
                 </div>
             </div>
-            <DropDown show={this.state.show}/>
+            <DropDown onClose ={this.showMenu} show={this.state.show}/>
         </React.Fragment>
     )
   }

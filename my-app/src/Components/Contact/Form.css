@@ -1,3 +1,12 @@
+@keyframes vision {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 .format{
     display: flex;
     flex-direction: column;
@@ -6,7 +15,8 @@
     width: 100%;
     height: 30px;
     border-radius: 15px;
-    text-decoration-line: none;
+    text-decoration-line: none; 
+    opacity: 0;
 }
 .message{
     height: 100px;
@@ -29,4 +39,20 @@
     padding: 1%;
     font-family: 'Roboto Slab', serif;
     font-size: 180%;
+    opacity: 0;
+}
+#name{
+    animation: vision 0.4s ease-in 0.5s 1 forwards;
+}
+#email{
+    animation: vision 0.4s ease-in 0.6s 1 forwards;
+}
+#subject{
+    animation: vision 0.4s ease-in 0.7s 1 forwards;
+}
+#message{
+    animation: vision 0.4s ease-in 0.8s 1 forwards;
+}
+#submit{
+    animation: vision 0.4s ease-in 0.9s 1 forwards;
 }
