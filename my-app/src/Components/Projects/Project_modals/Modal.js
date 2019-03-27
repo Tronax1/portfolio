@@ -12,7 +12,7 @@ export default class Modal extends Component{
         }
         return(
             <React.Fragment>
-                <div className = "Background">
+                <div id = "Mwindow" className = "Background">
                     <div className="Contents">
                         <div className="Header">
                             <button className = "Close" onClick = {(e) => {this.onClose(e)}}>
