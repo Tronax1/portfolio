@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd my-app && npm start",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronax1/portfolio.git"
+  },
+  "author": "Jorge Villarreal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tronax1/portfolio/issues"
+  },
+  "homepage": "https://github.com/Tronax1/portfolio#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
