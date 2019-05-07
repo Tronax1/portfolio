@@ -1,9 +1,17 @@
 
-.Body{
+.BodyResume {
     font-family: 'Roboto Slab', serif;
     font-size: 120%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-.Background{
+.Paragraph{
+    display: flex;
+    flex-direction: row;
+    width: 55rem;
+    height: 2rem;
+}
+.Background {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -15,7 +23,7 @@
     opacity: 0;
 }
 
-.Contents{
+.Contents {
     position: absolute;
     top: 10%;
     left: 15%;
@@ -25,18 +33,21 @@
     border-radius: 10px;
     overflow-y: auto;
 }
-.Header{
+
+.Header {
     position: fixed;
     right: 10%;
     top: 5%;
 }
-.ModalImg{
+
+.ModalImg {
     height: 50vw;
     width: 70vw;
     object-fit: cover;
     margin-bottom: 2rem;
 }
-.Repos{
+
+.Repos {
     display: flex;
     justify-content: center;
     padding: 2px;
@@ -47,27 +58,38 @@
     border-radius: 20px;
     width: 50%;
 }
-.Repos:hover{
+
+.Repos:hover {
     background: black;
 }
-.Close{
+
+.Close {
     background: none;
     border: none;
 }
-.Close:focus{
+
+.Close:focus {
     outline: 0;
 }
-.fa-times{
+
+.fa-times {
     color: gray;
 }
+
 .fa-times:hover {
     color: white;
 }
-#Mwindow{
+.Centered{
+    text-align: center;
+    color: rgb(55, 195, 219);
+}
+
+#Mwindow {
     animation: vision 0.4s ease-in 0s 1 forwards;
 }
+
 @media only screen and (min-width: 768px) {
-    .Repos{
+    .Repos {
         width: 20%;
         margin-left: 40%;
     }
