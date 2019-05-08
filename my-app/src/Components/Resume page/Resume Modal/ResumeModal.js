@@ -27,12 +27,11 @@ export default class ResumeModal extends Component {
                             <p  className="Paragraph">C: 8135050890 jvillarreal1@mail.usf.edu  jvilla1714@gmail.com</p>
                             < h3 className="Centered"> PROFESSIONAL SUMMARY </h3>
                             < p className="Paragraph"> Talented computer engineer with a strong background in object oriented
-                            programming and web development. Portfolio available at: 
+                            programming and web development.<br/> Portfolio available at: 
                             "Website to the folio" </p>
                             < h3 className="Centered"> EDUCATION </h3>
                             <p className="Paragraph"><strong>Bachelor of Science:</strong> Computer Engineering, 
-                                Expected December 2019
-                                University of South Florida - Tampa, Florida, United States
+                                Expected <strong> December 2019</strong> <br/>University of South Florida - Tampa, Florida, United States
                             </p>
                             <h3 className="Centered">WORK HISTORY</h3>
                             <p className="Paragraph"> Programming Tutor, 05/2017 to 08/2017<br/>

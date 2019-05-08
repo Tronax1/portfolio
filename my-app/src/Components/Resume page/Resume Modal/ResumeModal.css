@@ -8,7 +8,7 @@
 .Paragraph{
     display: flex;
     flex-direction: row;
-    width: 55rem;
+    width: 80rem;
     height: 2rem;
 }
 .Background {
