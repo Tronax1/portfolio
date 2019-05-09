@@ -42,17 +42,17 @@
     opacity: 0;
 }
 #name{
-    animation: vision 0.4s ease-in 0.5s 1 forwards;
+    animation: vision 0.4s ease-in 3.5s 1 forwards;
 }
 #email{
-    animation: vision 0.4s ease-in 0.6s 1 forwards;
+    animation: vision 0.4s ease-in 3.6s 1 forwards;
 }
 #subject{
-    animation: vision 0.4s ease-in 0.7s 1 forwards;
+    animation: vision 0.4s ease-in 3.7s 1 forwards;
 }
 #message{
-    animation: vision 0.4s ease-in 0.8s 1 forwards;
+    animation: vision 0.4s ease-in 3.8s 1 forwards;
 }
 #submit{
-    animation: vision 0.4s ease-in 0.9s 1 forwards;
+    animation: vision 0.4s ease-in 3.9s 1 forwards;
 }

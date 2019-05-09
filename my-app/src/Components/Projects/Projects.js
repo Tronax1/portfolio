@@ -6,6 +6,9 @@ import Modal from "./Project_modals/Modal"
 import Aldebaran from "./Aldebaran.jpg"
 import Calculator from "./Calculator.jpg"
 import Delay from "../Animation/Delay"
+import ImageBackground from "../Image Backgrounds/ImageBackground"
+import PurpleOcean from '../Images/Purple ocean.jpg'
+import Loading from "../Animation/Loading"
 
 export default class Projects extends Component {
     constructor(props){
@@ -42,8 +45,11 @@ export default class Projects extends Component {
     return (
       <React.Fragment>
           <Delay/>
-          <div className="Gradient">
-              <div className = "ProjectContent">
+          <Loading/>
+          <ImageBackground img={PurpleOcean}/>
+          <div className="Gradient"> 
+            </div>
+             <div className = "ProjectContent">
                   <button id = "aldebaran" className = "Projects" onClick={this.showModal}>
                     Aldebaran
                   </button>
@@ -70,7 +76,6 @@ export default class Projects extends Component {
                   that allows the player to compete against the computer or against another human."
                     repo = "https://github.com/Tronax1/Tic-Tac-Toe" / >
               </div>
-            </div>
         </React.Fragment>
     )
   }

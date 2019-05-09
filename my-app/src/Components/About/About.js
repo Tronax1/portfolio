@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Delay from "../Animation/Delay"
 import Loading from "../Animation/Loading"
+import ImageBackground from "../Image Backgrounds/ImageBackground"
+import OrangeForest from '../Images/Orange Forest.jpg'
 
 import "./Aboutpage.css"
 
@@ -10,6 +12,7 @@ export default class About extends Component {
       <React.Fragment>
           <Loading/>
           <Delay/>
+          <ImageBackground img={OrangeForest}/>
           <div className="dark"/>
           <div id ="back"/>
           <div id ="front"/>
