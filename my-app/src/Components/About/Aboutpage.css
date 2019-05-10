@@ -49,7 +49,7 @@
 
 #back {
     background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -76,7 +76,7 @@
 
 #front {
     background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;

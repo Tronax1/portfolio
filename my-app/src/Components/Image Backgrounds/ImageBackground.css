@@ -1,4 +1,11 @@
-
+.Background-image-format {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+.actual-image{
+    background-size: cover;
+}
 @media only screen and (min-width: 768px){
     .Background-image-format {
         position: absolute;
@@ -8,6 +15,6 @@
         right: 0;
         z-index: -30;
         overflow-y: hidden;
-        height: 40rem;
+        height: 100%;
     }
 }
