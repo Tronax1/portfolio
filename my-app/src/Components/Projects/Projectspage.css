@@ -39,21 +39,7 @@
     margin-left: 40px;
     height: 50rem;
 }
-.Projects{
-    text-decoration-line: none;
-    font-size: 200%;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1%;
-    color: rgba(12, 95, 12, 2);
-    border-style: solid;
-    border-radius: 10px;
-    transition: 0.3s;
-    background-color: rgba(200, 130, 100, 0.719);
-    height: 10rem;
-    width: 15rem;
-    box-shadow: 5px 10px 18px red;
-    opacity: 0;
-}
+
 .Projects:focus{
     outline: 0;
 }
@@ -64,7 +50,7 @@
 #aldebaran{
     animation: vision 0.5s ease-in 3.5s 1 forwards;
 }
-#multiplier{
+#knight{
     animation: vision 0.5s ease-in 3.6s 1 forwards;
 }
 #calculator{
