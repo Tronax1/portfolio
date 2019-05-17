@@ -8,10 +8,13 @@
     left: 5%;
     font-family: 'Roboto Slab', serif;
 }
-.Linkedin{
+.Social-Media{
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 28rem;
     left: 1rem;
+    width: 120%;
 }
 
 @media only screen and (min-width: 768px){
@@ -24,7 +27,7 @@
         left: 37%;
         font-family: 'Roboto Slab', serif;
     }
-    .Linkedin{
+    .Social-Media{
         top: 30rem;
         left: 20rem;
     }
