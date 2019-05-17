@@ -4,10 +4,10 @@
 .HomeContent{
     display: flex;
     position: absolute;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     top: 10%;
-    left: 10%;
+    left: 2.5%;
     font-size: 1.5rem;
     font-family: 'Roboto Slab', serif;
     color: rgb(24, 4, 4);
