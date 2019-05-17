@@ -8,6 +8,12 @@
     left: 5%;
     font-family: 'Roboto Slab', serif;
 }
+.Linkedin{
+    position: absolute;
+    top: 28rem;
+    left: 1rem;
+}
+
 @media only screen and (min-width: 768px){
     .ContactsContent {
         display: flex;
@@ -17,5 +23,9 @@
         top: 10%;
         left: 37%;
         font-family: 'Roboto Slab', serif;
+    }
+    .Linkedin{
+        top: 30rem;
+        left: 20rem;
     }
 }
