@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import './Resumepage.css'
 import ResumeModal from './Resume Modal/ResumeModal'
 import Delay from "../Animation/Delay"
-import pdf from "./CV Jorge Villarreal.pdf"
 
 export default class Resume extends Component{
     constructor(props){
@@ -85,8 +84,6 @@ export default class Resume extends Component{
             <input className="button" type="button"
             onClick={this.showModal}
              value="View PDF"/>
-            <a className="CV" 
-                href={pdf} download="Resume.pdf"> Download CV</a>
             <ResumeModal onClose={this.showModal} show={this.state.show}/>
         </React.Fragment >
     );

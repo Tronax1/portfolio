@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import './ResumeModal.css'
+import pdf from "../CV Jorge Villarreal.pdf"
 
 export default class ResumeModal extends Component {
  onClose = (e)=>{
@@ -80,6 +81,7 @@ export default class ResumeModal extends Component {
                             </ul>
                         </div>    
                         <div className="Footer">
+                            <a  href={pdf} download="CV Jorge Villarreal.pdf"> Download CV</a>
                         </div>
                     </div>    
                 </div>
