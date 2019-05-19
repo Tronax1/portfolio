@@ -5,8 +5,8 @@
 **My work includes**
 
 * [Aldebaran](https://github.com/Tronax1/Aldebaran-): A Discord music bot application
-* [Scientific Calculator](https://github.com/nshamsuddin): Calculator made in Visual Studio with forms
-* [Tic-Tac-Toe](https://github.com/Tronax1/Calculator): A player vs player tic-tac-toe game
+* [Scientific Calculator](https://github.com/Tronax1/Calculator): Calculator made in Visual Studio with forms
+* [Tic-Tac-Toe](https://github.com/Tronax1/Tic-Tac-Toe): A player vs player tic-tac-toe game
 * [Knight's Move Game](https://github.com/Tronax1/Knights-game): A player vs AI game
 
 ## Approach
