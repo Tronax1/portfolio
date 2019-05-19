@@ -8,6 +8,11 @@
     height: 60rem;
     z-index: -1;
 }
+.CV{
+    position: absolute;
+    bottom: -1480px;
+    left: 30%;
+}
 .button{
     position: absolute;
     bottom: -1480px;
