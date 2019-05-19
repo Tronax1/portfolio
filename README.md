@@ -4,10 +4,10 @@
 
 **My work includes**
 
-* Aldebaran: A Discord music bot application
-* Scientific calculator: Calculator made in Visual Studio with forms
-* Tic-Tac-Toe: A player vs player tic-tac-toe game
-* Knight's move game: A player vs AI game
+* [Aldebaran](https://github.com/Tronax1/Aldebaran-): A Discord music bot application
+* [Scientific Calculator](https://github.com/nshamsuddin): Calculator made in Visual Studio with forms
+* [Tic-Tac-Toe](https://github.com/Tronax1/Calculator): A player vs player tic-tac-toe game
+* [Knight's Move Game](https://github.com/Tronax1/Knights-game): A player vs AI game
 
 ## Approach
 To have a solid web application, I used the React library for the front-end
