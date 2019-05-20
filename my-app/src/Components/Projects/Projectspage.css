@@ -48,16 +48,16 @@
     color:white;
 }
 #aldebaran{
-    animation: vision 0.5s ease-in 3.5s 1 forwards;
+    animation: vision 0.5s ease-in 0.8s 1 forwards;
 }
 #knight{
-    animation: vision 0.5s ease-in 3.6s 1 forwards;
+    animation: vision 0.5s ease-in 1.0s 1 forwards;
 }
 #calculator{
-    animation: vision 0.5s ease-in 3.7s 1 forwards;
+    animation: vision 0.5s ease-in 1.2s 1 forwards;
 }
 #tictac{
-    animation: vision 0.5s ease-in 3.8s 1 forwards;
+    animation: vision 0.5s ease-in 1.4s 1 forwards;
 }
 @media only screen and (min-width: 768px){
     .ProjectContent {

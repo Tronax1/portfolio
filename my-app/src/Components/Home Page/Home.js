@@ -4,7 +4,6 @@ import {NavLink} from 'react-router-dom'
 
 import Mountain from './SnowMountains.jpg'
 import Delay from "../Animation/Delay"
-import Loading from "../Animation/Loading"
 
 import "./Homepage.css"
 import "./Snow.scss"
@@ -13,7 +12,6 @@ export default class Home extends Component {
   render() {
     return (
       <React.Fragment>
-            <Loading/>
             <Delay/>
             <div className="lockdown">
                 <div className="background">

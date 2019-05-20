@@ -7,7 +7,6 @@ import Calculator from "./Calculator.jpg"
 import Delay from "../Animation/Delay"
 import ImageBackground from "../Image Backgrounds/ImageBackground"
 import PurpleOcean from '../Images/Purple ocean.jpg'
-import Loading from "../Animation/Loading"
 import Knight from "./Knight move.jpg"
 import TicTacToe from "./Tic Tac Toe.jpg"
 import ProjectButton from "../Projects/Project button/ProjectButton"
@@ -17,7 +16,6 @@ export default class Projects extends Component {
     return (
       <React.Fragment>
           <Delay/>
-          <Loading/>
           <ImageBackground img={PurpleOcean}/>
           <div className="Gradient"> </div>
              <div className = "ProjectContent">
