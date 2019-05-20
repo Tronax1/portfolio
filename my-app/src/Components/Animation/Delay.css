@@ -10,7 +10,7 @@
     }
 }
 .transition-back {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -18,5 +18,5 @@
     animation: appear 0.8s ease-in 0s 1 forwards;
     background-color: black;
     
-    height: 40rem;
+    
 }
