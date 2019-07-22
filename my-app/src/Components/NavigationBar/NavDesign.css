@@ -1,20 +1,4 @@
-.Nav {
-    position: fixed;
-    top: 0;
-    box-sizing: border-box;
-    justify-content: center;
-    background: rgb(8, 7, 7);
-    height: 50px;
-    width: 100%;
-    z-index: 9999;
-}
-.Nav-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-}
+
 .textHover {
     color: rgb(170, 180, 180);
     text-decoration-line: none;
@@ -79,27 +63,6 @@ p {
     padding-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
-    .Nav {
-        position: fixed;
-        top: 0;
-        box-sizing: border-box;
-        justify-content: center;
-        background: rgb(8, 7, 7);
-        height: 100%;
-        width: 100px;
-        z-index: 9999;
-    }
-
-    .Nav-flex {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        align-items: flex-start;
-   
-        height: 100%;
-        justify-content: center;
-    }
-
     .Elements {
         display: flex;
         flex-direction: column;

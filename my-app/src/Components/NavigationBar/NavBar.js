@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import DropDown from './DropDown'
+import Nav from '../Elements/Nav'
+import NavFlex from '../Elements/NavFlex'
 
 import "./NavDesign.css"
 
@@ -19,8 +21,8 @@ export default class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-            <div className="Nav">
-                < div className = "Nav-flex" >
+            <Nav>
+                <NavFlex>
                     <div className = "Brand">
                         < NavLink className = "textHover Logo" to = "/">JV</NavLink >
                     </div>   
@@ -35,8 +37,8 @@ export default class NavBar extends Component {
                       < div id = "Line" / >
                       < div id = "Line" / >
                     </button>
-                </div>
-            </div>
+                </NavFlex>
+            </Nav>
             <DropDown onClose ={this.showMenu} show={this.state.show}/>
         </React.Fragment>
     )
