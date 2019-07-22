@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-
-import "./Delay.css"
+import Fade from '../Elements/Fade'
 
 export default class Delay extends Component {
   render() {
     return (
       <div>
-        <div className="transition-back"/>
+        <Fade/>
       </div>
     )
   }
