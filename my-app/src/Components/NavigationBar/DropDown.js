@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
+import NavLinkElements from '../Elements/NavLinkElements'
 
 import "./DropDown.css"
 
@@ -11,10 +11,10 @@ export default class DropDown extends Component {
     return (
       <div id= "drop" className="Dropdown">
                 <div className="ElementsDrop">
-                        < NavLink className = "textHover Spacing" to="/About" onClick={this.props.onClose}>About</NavLink >
-                        < NavLink className = "textHover Spacing" to = "/Resume" onClick={this.props.onClose}> Resume </NavLink >
-                        < NavLink className = "textHover Spacing" to = "/Projects" onClick={this.props.onClose}> Projects </NavLink >
-                        < NavLink className = "textHover Spacing" to = "/Contact" onClick={this.props.onClose}> Contact </NavLink >     
+                        < NavLinkElements to="/About" onClick={this.props.onClose}>About</NavLinkElements >
+                        < NavLinkElements to = "/Resume" onClick={this.props.onClose}> Resume </NavLinkElements >
+                        < NavLinkElements to = "/Projects" onClick={this.props.onClose}> Projects </NavLinkElements >
+                        < NavLinkElements to = "/Contact" onClick={this.props.onClose}> Contact </NavLinkElements >     
                 </div>
       </div>
     )

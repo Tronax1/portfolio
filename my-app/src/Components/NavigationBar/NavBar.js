@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
 import DropDown from './DropDown'
 import Nav from '../Elements/Nav'
 import NavFlex from '../Elements/NavFlex'
-
-import "./NavDesign.css"
+import NavLinkElements from '../Elements/NavLinkElements'
+import NavLinkBrand from '../Elements/NavLinkBrand'
+import NavBrand from '../Elements/NavBrand'
+import NavElements from '../Elements/NavElements'
+import Hamburger from '../Elements/Hamburger'
+import HamburgerLines from '../Elements/HamburgerLines'
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -23,20 +26,20 @@ export default class NavBar extends Component {
       <React.Fragment>
             <Nav>
                 <NavFlex>
-                    <div className = "Brand">
-                        < NavLink className = "textHover Logo" to = "/">JV</NavLink >
-                    </div>   
-                    <div className="Elements">
-                        < NavLink className = "Spacing textHover" to="/About">About</NavLink >
-                        < NavLink className = "Spacing textHover" to = "/Resume" > Resume </NavLink >
-                        < NavLink className = "Spacing textHover" to = "/Projects" > Projects </NavLink >
-                        < NavLink className = "Spacing textHover" to = "/Contact" > Contact </NavLink >     
-                    </div>
-                    <button className="Hamburger" onClick={this.showMenu}>
-                      < div id = "Line" / >
-                      < div id = "Line" / >
-                      < div id = "Line" / >
-                    </button>
+                    <NavBrand>
+                        < NavLinkBrand to = "/">JV</NavLinkBrand >
+                    </NavBrand>   
+                    <NavElements>
+                        < NavLinkElements to="/About">About</NavLinkElements >
+                        < NavLinkElements to = "/Resume" > Resume </NavLinkElements >
+                        < NavLinkElements to = "/Projects" > Projects </NavLinkElements >
+                        < NavLinkElements to = "/Contact" > Contact </NavLinkElements >     
+                    </NavElements>
+                    <Hamburger onClick={this.showMenu}>
+                      <HamburgerLines/>
+                      <HamburgerLines/>
+                      <HamburgerLines/>
+                    </Hamburger>
                 </NavFlex>
             </Nav>
             <DropDown onClose ={this.showMenu} show={this.state.show}/>
