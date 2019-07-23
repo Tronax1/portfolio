@@ -1,4 +1,15 @@
-.Dropdown {
+import styled from 'styled-components'
+
+export default styled.div`
+    @keyframes vision {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
     position: fixed;
     margin-top: 43px;
     background: black;
@@ -6,21 +17,8 @@
     border-top: solid;
     border-top-color: rgb(100, 100, 100);
     opacity: 0;
-}
-
-.ElementsDrop {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 0.8rem;
-    text-align: center;
-    background: black;
-}
-#drop{
     animation: vision 0.25s ease-in 0s 1 forwards;
-}
-@media only screen and (min-width: 768px) {
-    .Dropdown{
+    @media only screen and (min-width: 768px){
         display: none;
     }
-}
+`;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavLinkElements from '../Elements/NavLinkElements'
-
-import "./DropDown.css"
+import NavDropDown from '../Elements/NavDropDown'
+import NavDropDownElements from '../Elements/NavDropDownElements'
 
 export default class DropDown extends Component {
   render() {
@@ -9,14 +9,14 @@ export default class DropDown extends Component {
           return null;
       }
     return (
-      <div id= "drop" className="Dropdown">
-                <div className="ElementsDrop">
+      <NavDropDown>
+                <NavDropDownElements>
                         < NavLinkElements to="/About" onClick={this.props.onClose}>About</NavLinkElements >
                         < NavLinkElements to = "/Resume" onClick={this.props.onClose}> Resume </NavLinkElements >
                         < NavLinkElements to = "/Projects" onClick={this.props.onClose}> Projects </NavLinkElements >
                         < NavLinkElements to = "/Contact" onClick={this.props.onClose}> Contact </NavLinkElements >     
-                </div>
-      </div>
+                </NavDropDownElements>
+      </NavDropDown>
     )
   }
 }
