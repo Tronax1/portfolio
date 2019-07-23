@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-
-import "./ImageBackground.css"
+import ImageFormat from '../Elements/ImageFormat'
 
 export default class ImageBackground extends Component {
   render() {
     return (
-      <div className="actual-img">
+      <ImageFormat>
         <img src={this.props.img} alt=""/>
-      </div>
+      </ImageFormat>
     )
   }
 }
