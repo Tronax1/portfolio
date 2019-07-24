@@ -48,6 +48,9 @@
     background: rgb(27, 26, 26);
     color:white;
 }
+#MoneyManager{
+    animation: vision 0.5s ease-in 0.6s 1 forwards;
+}
 #aldebaran{
     animation: vision 0.5s ease-in 0.8s 1 forwards;
 }
@@ -62,15 +65,13 @@
 }
 @media only screen and (min-width: 768px){
     .ProjectContent {
-        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        position: absolute;
         top: 30%;
         left: 5%;
         margin-left: 3rem;
         width: 70rem;
         height: 25rem;
+        flex-wrap: wrap;
     }
     .Gradient{
         height: 40rem;
