@@ -38,6 +38,7 @@
     left: 5%;
     margin-left: 40px;
     height: 50rem;
+    overflow-y: scroll;
 }
 
 .Projects:focus{

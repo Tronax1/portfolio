@@ -19,6 +19,14 @@ export default class Projects extends Component {
           <ImageBackground img={PurpleOcean}/>
           <div className="Gradient"> </div>
              <div className = "ProjectContent">
+                    <ProjectButton ident="MoneyManager" description="MoneyManager" image={Aldebaran} 
+                    information="This is a full stack application that helps the user keep track of expenses, 
+                    it also has a mortgage calculator to determine what the house payments per month would be 
+                    given a down payment, and interest rate. The application also displays whether the user is 
+                    overspending given the income, as well as the expenses. Last but not least, it shows the 
+                    current value of a stock given by user input." 
+                    repository="https://github.com/Tronax1/Money-Manager"/>
+
                     <ProjectButton ident="aldebaran" description="Aldebaran" image={Aldebaran} 
                     information="This is a discord bot application
                     that plays music from a youtube playlist, it also acts like a basic dictionary

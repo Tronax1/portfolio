@@ -11,7 +11,7 @@ export default styled.div`
     background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        overflow-y: hidden;
+        
     @media only screen and (min-width: 768px){  
         
     }

@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import './Resumepage.css'
 import ResumeModal from './Resume Modal/ResumeModal'
 import Delay from "../Animation/Delay"
+import ImageBackground from '../Image Backgrounds/ImageBackground'
+import Aldebaran from '../Projects/Aldebaran repo.jpg'
 
 export default class Resume extends Component{
     constructor(props){
@@ -19,8 +21,9 @@ export default class Resume extends Component{
        }
     render(){
     return(
-        <React.Fragment>
+        <div className="Stay-put">
             < Delay / >
+            <ImageBackground img={Aldebaran}/>
             <div className="ResumeContent"> 
                 <p className="Formatting">
                 
@@ -85,7 +88,7 @@ export default class Resume extends Component{
             onClick={this.showModal}
              value="View PDF"/>
             <ResumeModal onClose={this.showModal} show={this.state.show}/>
-        </React.Fragment >
+        </div >
     );
     }
 }
