@@ -5,7 +5,7 @@ import './Resumepage.css'
 import ResumeModal from './Resume Modal/ResumeModal'
 import Delay from "../Animation/Delay"
 import ImageBackground from '../Image Backgrounds/ImageBackground'
-import Aldebaran from '../Projects/Aldebaran repo.jpg'
+import DarkBackground from '../Images/Dark background.jpg'
 
 export default class Resume extends Component{
     constructor(props){
@@ -23,18 +23,18 @@ export default class Resume extends Component{
     return(
         <div className="Stay-put">
             < Delay / >
-            <ImageBackground img={Aldebaran}/>
+            <ImageBackground img={DarkBackground}/>
             <div className="ResumeContent"> 
                 <p className="Formatting">
                 
-                    < span id = "Contents" > <span id="Magenta">#include</span><span id="orange">&lt;iostream&gt;</span></span>
+                    < span id = "Contents" > <span id="Magenta">#include</span><span id="orange">&lt;iostream&gt;<br/></span></span>
                     < span id = "Contents" > <span id="Magenta">#include</span><span id="orange">&lt;stdio.h&gt;</span></span><br/>
 
                     < span id = "Contents" >using <span id="lightBlue">namespace</span> std;</span><br/>
 
                     < span id = "Contents" ><span id="Types">int</span> main() &#123;</span>
 
-                    <span id="Header"><strong>Jorge Villarreal</strong></span><br/>
+                    <span id="Header"><strong><br/>Jorge Villarreal</strong></span><br/>
 
                     < span id = "Header-two" > <strong>Education</strong> </span> < br / >
                     <span id="Contents"><strong><span id="Reserved">Bachelor of Science:</span></strong> Computer Engineering, 

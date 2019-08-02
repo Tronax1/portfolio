@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 import "./Projectspage.css"
@@ -11,8 +11,7 @@ import Knight from "./Knight move.jpg"
 import TicTacToe from "./Tic Tac Toe.jpg"
 import ProjectButton from "../Projects/Project button/ProjectButton"
 
-export default class Projects extends Component {
-  render() {
+export default function Projects(){
     return (
       <React.Fragment>
           <Delay/>
@@ -49,6 +48,5 @@ export default class Projects extends Component {
                     repository = "https://github.com/Tronax1/Tic-Tac-Toe" / >
               </div>
         </React.Fragment>
-    )
-  }
+    );
 }

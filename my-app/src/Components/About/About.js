@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Delay from "../Animation/Delay"
 import ImageBackground from "../Image Backgrounds/ImageBackground"
 import OrangeForest from '../Images/Orange Forest.jpg'
 
 import "./Aboutpage.css"
 
-export default class About extends Component {
-  render() {
+export default function About(){
     return (
       <React.Fragment>
           <Delay/>
@@ -25,6 +24,5 @@ export default class About extends Component {
                 pariatur consequat consectetur fugiat.
             </div>
         </React.Fragment>
-    )
-  }
+    );
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import {NavLink} from 'react-router-dom'
 
@@ -8,8 +8,7 @@ import Delay from "../Animation/Delay"
 import "./Homepage.css"
 import "./Snow.scss"
 
-export default class Home extends Component {
-  render() {
+export default function Home(){
     return (
       <React.Fragment>
             <Delay/>
@@ -29,6 +28,5 @@ export default class Home extends Component {
                 <img src={Mountain} alt=""/>
             </div>
         </React.Fragment >
-    )
-  }
+    );
 }
