@@ -72,6 +72,7 @@
         width: 70rem;
         height: 25rem;
         flex-wrap: wrap;
+        overflow-y: visible;
     }
     .Gradient{
         height: 40rem;

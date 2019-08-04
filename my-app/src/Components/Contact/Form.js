@@ -42,7 +42,7 @@ export default class Form extends Component {
                  placeholder = "Name" onChange={this.handleChange}/>
                 </label>
                 <label>
-                 <input type="text" id = "email" className="format" name = "email"
+                 <input type="email" id = "email" className="format" name = "email"
                  placeholder = "Email" onChange={this.handleChange}/>
                 </label>
                 <label>

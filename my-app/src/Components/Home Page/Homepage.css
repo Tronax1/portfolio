@@ -48,13 +48,12 @@ img{
     .HomeContent {
         flex-direction: row;
         text-align: center;
-        top: 0;
+        top: 30px;
         left: 300px;
-        bottom: 0;
-        right: 0;
         font-size: 4rem;
         font-family: 'Roboto Slab', serif;
         color: rgb(24, 4, 4);
+        width: 40rem;
     }
 
     .background {
@@ -69,17 +68,8 @@ img{
     }
 
     .GetStarted {
-        position: absolute;
         top: 70vh;
-        left: 40%;
-        text-decoration-line: none;
-        font-size: 250%;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 1%;
-        color: rgba(12, 95, 12, 2);
-        border-style: solid;
-        border-radius: 10px;
-        transition: 0.3s;
+        left: 80vh;
     }
 
     .GetStarted:hover {
