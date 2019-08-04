@@ -6,6 +6,7 @@ export default styled(NavLink)`
     padding-bottom: 10px;
     color: rgb(170, 180, 180);
     text-decoration-line: none;
+    width: 100%;
     &:active{
         background: white;
     }
@@ -14,7 +15,7 @@ export default styled(NavLink)`
         transition: 0.5s
     }
     @media only screen and (min-width: 768px){
-        padding: 1.5rem;
+        
         border-radius: 7%;
         color: rgb(170, 180, 180);
         text-decoration-line: none;

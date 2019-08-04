@@ -8,5 +8,6 @@ export default styled.div`
         position: absolute;
         top: 60%;
         left: 0.3%;
+        width: 100%;
     }
 `;
