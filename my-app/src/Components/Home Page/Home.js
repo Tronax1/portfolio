@@ -1,8 +1,6 @@
 import React from 'react'
 
 import {NavLink} from 'react-router-dom'
-
-import Mountain from './SnowMountains.jpg'
 import Delay from "../Animation/Delay"
 
 import "./Homepage.css"
@@ -22,10 +20,9 @@ export default function Home(){
                     < div className = "Snow layer3" / >
                 </div> 
                 < div className = "HomeContent">
-                    < p > Oh hey, < br / > I didn't see you there <br/> welcome to my life </p>
+                     Oh hey, < br / > I didn't see you there <br/> welcome to my life 
                 </div>
                 < NavLink className = "GetStarted" to = "/About" > Get Started </NavLink >
-                <img src={Mountain} alt=""/>
             </div>
         </React.Fragment >
     );

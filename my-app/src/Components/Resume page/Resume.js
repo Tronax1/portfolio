@@ -4,8 +4,6 @@ import React, { Component } from 'react';
 import './Resumepage.css'
 import ResumeModal from './Resume Modal/ResumeModal'
 import Delay from "../Animation/Delay"
-import ImageBackground from '../Image Backgrounds/ImageBackground'
-import DarkBackground from '../Images/Dark background.jpg'
 
 export default class Resume extends Component{
     constructor(props){
@@ -23,7 +21,7 @@ export default class Resume extends Component{
     return(
         <div className="Stay-put">
             < Delay / >
-            <ImageBackground img={DarkBackground}/>
+           
             <div className="ResumeContent"> 
                 <p className="Formatting">
                 

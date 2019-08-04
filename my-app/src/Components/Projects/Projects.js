@@ -5,8 +5,6 @@ import "./Projectspage.css"
 import Aldebaran from "./Aldebaran repo.jpg"
 import Calculator from "./Calculator.jpg"
 import Delay from "../Animation/Delay"
-import ImageBackground from "../Image Backgrounds/ImageBackground"
-import PurpleOcean from '../Images/Purple ocean.jpg'
 import Knight from "./Knight move.jpg"
 import TicTacToe from "./Tic Tac Toe.jpg"
 import ProjectButton from "../Projects/Project button/ProjectButton"
@@ -15,7 +13,6 @@ export default function Projects(){
     return (
       <React.Fragment>
           <Delay/>
-          <ImageBackground img={PurpleOcean}/>
           <div className="Gradient"> </div>
              <div className = "ProjectContent">
                     <ProjectButton ident="MoneyManager" description="MoneyManager" image={Aldebaran} 

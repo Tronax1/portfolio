@@ -7,6 +7,8 @@ import Contact from "./Components/Contact/Contact"
 import Projects from "./Components/Projects/Projects"
 import NavBar from "./Components/NavigationBar/NavBar"
 import Resume from "./Components/Resume page/Resume"
+import ImageBackground from './Components/Image Backgrounds/ImageBackground'
+import DarkBackground from './Components/Images/Dark background.jpg'
 
 class App extends Component {
   render() {
@@ -15,6 +17,7 @@ class App extends Component {
       <BrowserRouter>
         <React.Fragment>
           <NavBar/>
+          <ImageBackground img={DarkBackground}/>
           <Switch>
             < Route path="/" component={Home}  exact/ > 
             < Route path="/About" component={About}/ >
