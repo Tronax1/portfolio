@@ -1,0 +1,10 @@
+.Resume-card-flex{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+}
+body{
+    background-color: #fca311;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

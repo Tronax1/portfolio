@@ -1,0 +1,14 @@
+.Card-b{
+    width: 60vw;
+    height: 60vh;
+    background-color: #e5e5e5;
+    box-shadow: 5px 10px #888888;
+    border-radius: 5px;
+}
+.Card-header{
+    text-align: center;
+    color: #14213d;
+}
+.Card-body{
+    font-size: 4vh;
+}

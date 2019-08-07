@@ -14,3 +14,16 @@
     font-size: 4rem;
     color: #14213d;
 }
+.Project-Redirect{
+    position: absolute;
+    top: 45vh;
+    left: 40vw;
+    padding: 40px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 6px;
+}
+.Project-Redirect:hover{
+    background-color: white;
+}
