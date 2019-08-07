@@ -7,3 +7,10 @@
     background-color: #fca311;
     margin-top: 13vh;
 }
+.Welcome-Message{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 4rem;
+    color: #14213d;
+}
