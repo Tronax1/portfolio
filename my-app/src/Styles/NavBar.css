@@ -1,0 +1,30 @@
+.Nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 13vh;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+.Nav-Flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.Home{
+    justify-content: flex-start;
+}
+.Nav-Elements{
+    padding: 5vh;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+}
+.Nav-Elements:hover{
+    transition-duration: 0.3s;
+    transition-delay: 0.05s;
+    background-color: white;
+    color: black;
+}
