@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Fade from '../Elements/Fade'
+
+import '../../Styles/Delay.css'
 
 export default class Delay extends Component {
   render() {
     return (
-      <div>
-        <Fade/>
+      <div className="Fade-In">
       </div>
     )
   }
