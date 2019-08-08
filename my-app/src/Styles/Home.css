@@ -1,11 +1,30 @@
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
 .Home-b{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fca311;
     margin-top: 13vh;
+     background: linear-gradient(244deg, #14213d, #fca311, #e5e5e5, #ffffff);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
 }
 .Welcome-Message{
     position: absolute;
@@ -18,7 +37,7 @@
     position: absolute;
     top: 45vh;
     left: 40vw;
-    padding: 40px;
+    padding: 20px;
     font-size: 2.5rem;
     text-decoration: none;
     border-style: solid;
@@ -26,4 +45,19 @@
 }
 .Project-Redirect:hover{
     background-color: white;
+}
+.Link-refs{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 65vh;
+    left: 30vw;
+    justify-content: space-evenly;
+    width: 70vh;
+}
+.Link-icons{
+    transition: all .2s ease-in-out;
+}
+.Link-icons:hover{
+    transform: scale(1.4);
 }
