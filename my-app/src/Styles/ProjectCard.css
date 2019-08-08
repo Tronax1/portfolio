@@ -1,5 +1,5 @@
 .Project-Card{
-    width: 20vw;
+    width: 40vh;
     height: 70vh;
     background-color: white;
     border-radius: 5px;
@@ -8,4 +8,14 @@
 }
 .Project-Card:hover{
     transform: scale(1.2);
+}
+.Project-Card-Header img{
+    width: 100%;
+    height: 30%;
+}
+.Project-Card-Body a{
+    text-decoration: none;
+    border-style: solid;
+    font-size: 1.3rem;
+    border-radius: 6px;
 }
