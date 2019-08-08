@@ -1,0 +1,11 @@
+.Project-Card{
+    width: 20vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 10px #888888;
+    transition: all .2s ease-in-out;
+}
+.Project-Card:hover{
+    transform: scale(1.2);
+}

@@ -8,13 +8,13 @@ export default class ProjectCard extends Component {
             <div>
                 <div className="Project-Card">
                     <div className="Project-Card-Header">
-
-                    </div>
-                    <div className="Project-Card-Body">
-
-                    </div>
-                    <div className="Project-Card-Body">
                         
+                    </div>
+                    <div className="Project-Card-Body">
+
+                    </div>
+                    <div className="Project-Card-Body">
+
                     </div>
                 </div>
             </div>
