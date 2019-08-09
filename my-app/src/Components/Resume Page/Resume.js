@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Delay from '../Animation/Delay'
 import ResumeCard from './ResumeCard'
+import USFlogo from './University of South Florida Logo.png'
 
 import '../../Styles/Resume.css'
 
@@ -10,21 +11,21 @@ export default class Resume extends Component {
             <div>
                 <Delay/>
                     <div className="Resume-card-flex">
-                        <ResumeCard header="Education" content={<p><strong>Bachelor of Science: </strong> 
+                        <ResumeCard header="Education" ident="p-1" content={<p><strong>Bachelor of Science: </strong> 
                         Computer Engineering, Expected December 2019<br/>
-                        University of South Florida-Tampa, FL,United States</p>}/>
-                        <ResumeCard header="Skills" content={<ul>
-                            <li>React</li>
+                        University of South Florida-Tampa, FL,United States<br /><br /> <img id="USF" src={USFlogo} alt="" /></p>}/>
+                        <ResumeCard header="Skills" ident="p-2" content={<ul>
+                            <li>React <i className="fab fa-react"></i></li>
                             <li>Redux</li>
-                            <li>Firebase</li>
-                            <li>HTML5 and CSS</li>
-                            <li>Java</li>
+                            <li>Firebase <i className="fas fa-fire"></i></li>
+                            <li>HTML5 and CSS <i className="fab fa-html5"></i> <i className="fab fa-css3-alt"></i></li>
+                            <li>Java  <i className="fab fa-java"></i></li>
                             <li>C/C++</li>
-                            <li>Unix/Linux</li>
+                            <li>Unix/Linux <i className="fab fa-linux"></i></li>
                             <li>Bilingual: English (Fluent), Spanish (Native)</li>
-                            <li>Amazon Web Services EC2</li> 
+                            <li>Amazon Web Services EC2  <i className="fab fa-aws"></i></li> 
                         </ul>} />
-                        <ResumeCard header="Experience" content={<p><strong>Programming Tutor </strong>,05/2017 to 08/2017 Colegio Albania–Mushaisa,
+                        <ResumeCard header="Experience" ident="p-3" content={<p><strong>Programming Tutor </strong>,05/2017 to 08/2017 Colegio Albania–Mushaisa,
                             La Guajira <ul>
                                     <li>
                                         Collaborated with a team of faculty to develop after-school tutorial 

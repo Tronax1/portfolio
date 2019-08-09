@@ -7,7 +7,7 @@ export default class ProjectCard extends Component {
     render() {
         return (
             <div>
-                <div className="Project-Card">
+                <div id={this.props.ident} className="Project-Card">
                     <div className="Project-Card-Header">
                         <img src={ProjectImage} alt=""></img>
                     </div>
