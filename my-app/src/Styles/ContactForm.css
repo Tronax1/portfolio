@@ -1,0 +1,44 @@
+.Form-background{
+    margin-top: 20vh;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #14213d;
+    height: 75vh;
+    width: 70vw;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 15px 15px #888888;
+}
+.Form-background input{
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    border-style: none;
+}
+.Form-background textarea{
+    width: 40vw;
+    font-size: 1.4rem;
+    height: 17vh;
+    border-radius: 6px;
+    border-style: none;
+}
+.Form-background button{
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    background-color: greenyellow;
+    border-style: none;
+    transition-duration: 0.3s;
+}
+.Form-background button:hover{
+    background-color: red;
+}
+.Form-background h1{
+    color: white;
+    font-size: 1.4rem;
+}
+
