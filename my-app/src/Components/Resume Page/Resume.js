@@ -9,7 +9,6 @@ export default class Resume extends Component {
         return (
             <div>
                 <Delay/>
-                <div className="Home-b">
                     <div className="Resume-card-flex">
                         <ResumeCard header="Education" content={<p><strong>Bachelor of Science: </strong> 
                         Computer Engineering, Expected December 2019<br/>
@@ -41,7 +40,7 @@ export default class Resume extends Component {
                                 </ul>
                                 </p>} />
                         </div>
-                </div>
+                
             </div>
         )
     }

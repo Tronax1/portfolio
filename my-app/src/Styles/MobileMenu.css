@@ -1,0 +1,25 @@
+.Nav-Mobile{
+    margin-top: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 63vh;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+.Nav-Flex-Mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (min-width: 768px){
+    .Nav-Mobile{
+        display: none;
+    }
+    .Nav-Flex-Mobile{
+        display: none;
+    }
+}

@@ -32,3 +32,22 @@
     background-color: white;
     color: black;
 }
+
+#Desktop-Elements{
+    display: none;
+}
+#Mobile-Menu{
+    background-color: transparent;
+    border-style: none;
+}
+#Mobile-Menu:active{
+    background-color: white;
+}
+@media only screen and (min-width: 768px){
+    #Desktop-Elements{
+        display: initial;
+    }
+    #Mobile-Menu{
+        display: none;
+    }
+}
