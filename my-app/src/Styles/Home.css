@@ -25,39 +25,60 @@
     -webkit-animation: AnimationName 11s ease infinite;
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite;
+    font-family: 'Slabo 27px', serif;
 }
 .Welcome-Message{
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 25%;
     font-size: 4rem;
     color: #14213d;
 }
 .Project-Redirect{
     position: absolute;
-    top: 45vh;
-    left: 40vw;
+    top: 55vh;
+    left: 27vw;
     padding: 20px;
     font-size: 2.5rem;
     text-decoration: none;
-    border-style: solid;
-    border-radius: 6px;
+    border-style: none;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    transition: all .4s ease-in-out;
+    box-shadow: 5px 10px #888888;
 }
 .Project-Redirect:hover{
     background-color: white;
+    color: black;
+    transform: scale(1.2);
 }
 .Link-refs{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 65vh;
-    left: 30vw;
+    top: 75vh;
+    left: 0;
     justify-content: space-evenly;
-    width: 70vh;
+    width: 55vh;
 }
 .Link-icons{
     transition: all .2s ease-in-out;
 }
 .Link-icons:hover{
     transform: scale(1.4);
+}
+@media only screen and (min-width: 768px){
+    .Project-Redirect{
+        top: 45vh;
+        left: 40vw;
+    }
+    .Link-refs{
+        top: 65vh;
+        left: 30vw;
+        width: 70vh;
+    }
+    .Welcome-Message{
+        top: 20%;
+    }
 }
