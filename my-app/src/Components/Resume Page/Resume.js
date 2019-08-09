@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Delay from '../Animation/Delay'
 import ResumeCard from './ResumeCard'
 import USFlogo from './University of South Florida Logo.png'
+import CV from './CV Jorge Villarreal.pdf'
 
 import '../../Styles/Resume.css'
 
@@ -40,6 +41,7 @@ export default class Resume extends Component {
                                     </li>
                                 </ul>
                                 </p>} />
+                                <a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>
                         </div>
                 
             </div>

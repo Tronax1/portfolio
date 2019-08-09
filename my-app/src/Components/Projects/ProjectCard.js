@@ -16,6 +16,7 @@ export default class ProjectCard extends Component {
                         {this.props.description}
                     </div>
                     <div className="Project-Card-Body">
+                        {this.props.technologies}
                         <a href={this.props.repo} target="_blank" rel="noopener noreferrer">View Source</a>
                     </div>
                 </div>

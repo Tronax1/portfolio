@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 
 import '../../Styles/ContactForm.css'
 
@@ -18,13 +19,19 @@ export default class ContactForm extends Component {
             [e.target.name]: e.target.value
         });
     }
-    handleSubmit(e){
+    async handleSubmit(e){
         e.preventDefault();
+        const {email, subject, message} = this.state;
         this.setState({
             email: '',
             subject: '',
             message: '',
         })
+        await axios.post('/api/form', {
+            email,
+            subject,
+            message
+        });
     }
     render() {
         return (

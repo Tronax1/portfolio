@@ -17,6 +17,7 @@
     font-size: 1.4rem;
     border-radius: 6px;
     border-style: none;
+    font-family: 'Slabo 27px', serif;
 }
 .Form-background textarea{
     width: 40vw;
@@ -24,6 +25,7 @@
     height: 17vh;
     border-radius: 6px;
     border-style: none;
+    font-family: 'Slabo 27px', serif;
 }
 .Form-background button{
     width: 40vw;
@@ -33,6 +35,7 @@
     background-color: greenyellow;
     border-style: none;
     transition-duration: 0.3s;
+    font-family: 'Slabo 27px', serif;
 }
 .Form-background button:hover{
     background-color: red;
