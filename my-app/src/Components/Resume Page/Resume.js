@@ -7,6 +7,9 @@ import CV from './CV Jorge Villarreal.pdf'
 import '../../Styles/Resume.css'
 
 export default class Resume extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div>

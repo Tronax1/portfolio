@@ -17,10 +17,10 @@ class App extends Component {
           <NavBar/>
           <Switch>
             < Route path="/" component={Home}  exact/ > 
-            < Route path="/About" component={About}/ >
-            < Route path="/Contact" component={Contact}/ >
-            < Route path="/Projects" component={Projects}/ >
-            < Route path = "/Resume"component = {Resume}/ >
+            < Route path="/About" component={About} / >
+            < Route path="/Contact" component={Contact} / >
+            < Route path="/Projects" component={Projects} / >
+            < Route path="/Resume" component={Resume} / >
           </Switch>
         </React.Fragment>
       </BrowserRouter>

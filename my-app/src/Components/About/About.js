@@ -4,6 +4,9 @@ import Delay from '../Animation/Delay'
 import '../../Styles/About.css'
 
 export default class About extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
     render() {
         return (
             <div>
