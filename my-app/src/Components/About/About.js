@@ -1,30 +1,20 @@
 import React, { Component } from 'react'
-import Delay from "../Animation/Delay"
-import ImageBackground from "../Image Backgrounds/ImageBackground"
-import OrangeForest from '../Images/Orange Forest.jpg'
+import Delay from '../Animation/Delay'
 
-import "./Aboutpage.css"
+import '../../Styles/About.css'
 
 export default class About extends Component {
-  render() {
-    return (
-      <React.Fragment>
-          <Delay/>
-          <ImageBackground img={OrangeForest}/>
-          <div className="dark"/>
-          <div id ="back"/>
-          <div id ="front"/>
-            <div className="AboutContent">
-                < h1 > About me </h1>
-                < i className = "fas fa-user-tie" > </i>
-                Deserunt occaecat ipsum eu aute laboris sunt duis eiusmod. 
-                Sit nulla enim magna anim consequat. Commodo minim ullamco sit consequat 
-                eu eu aliquip excepteur pariatur laboris cupidatat consectetur nisi commodo. 
-                Id sunt magna ex eu deserunt in irure sit amet ipsum. Fugiat eu eu nostrud 
-                consequat duis esse irure amet eu officia aute. Laborum esse aute excepteur 
-                pariatur consequat consectetur fugiat.
+    render() {
+        return (
+            <div>
+                <Delay/>
+                <div className="About-Content">
+                    <h1>About Me</h1>
+                    <p>I am a self taught web developer with a strong background in object oriented programming.
+                        I also like to play chess and learn new technologies during my free time.
+                    </p>
+                </div>
             </div>
-        </React.Fragment>
-    )
-  }
+        )
+    }
 }

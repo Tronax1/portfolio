@@ -1,46 +1,44 @@
 import React, { Component } from 'react'
+import Delay from '../Animation/Delay'
+import ProjectCard from './ProjectCard'
 
-
-import "./Projectspage.css"
-import Aldebaran from "./Aldebaran repo.jpg"
-import Calculator from "./Calculator.jpg"
-import Delay from "../Animation/Delay"
-import ImageBackground from "../Image Backgrounds/ImageBackground"
-import PurpleOcean from '../Images/Purple ocean.jpg'
-import Knight from "./Knight move.jpg"
-import TicTacToe from "./Tic Tac Toe.jpg"
-import ProjectButton from "../Projects/Project button/ProjectButton"
+import '../../Styles/Projects.css'
 
 export default class Projects extends Component {
-  render() {
-    return (
-      <React.Fragment>
-          <Delay/>
-          <ImageBackground img={PurpleOcean}/>
-          <div className="Gradient"> </div>
-             <div className = "ProjectContent">
-                    <ProjectButton ident="aldebaran" description="Aldebaran" image={Aldebaran} 
-                    information="This is a discord bot application
-                    that plays music from a youtube playlist, it also acts like a basic dictionary
-                    and displays your osu! statistics." repository="https://github.com/Tronax1/Aldebaran-"/>
-
-                    <ProjectButton ident="knight" description="Knight's Move Game" image={Knight} 
-                    information="This is a player vs AI gamewhere both players move a chess knight 
-                    around the board, and whoever runs out of moves looses."
-                    repository="https://github.com/Tronax1/Knights-game"/>
-
-                    <ProjectButton ident="calculator" description="Calculator" image={Calculator} 
-                    information="This is a scientific calculator that performs the basic arirthmetic 
-                    operations as well as additional trigonometric functions such as sine, 
-                    cosine and tangent." 
-                    repository = "https://github.com/Tronax1/Calculator" / >
-
-                    <ProjectButton ident="tictac" description="Tic Tac Toe" image={TicTacToe} 
-                    information="Simple Tic-Tac-Toe game
-                    that allows the player to compete against the computer or against another human." 
-                    repository = "https://github.com/Tronax1/Tic-Tac-Toe" / >
-              </div>
-        </React.Fragment>
-    )
-  }
+    render() {
+        return (
+            <div>
+                <Delay/>
+                <div className="Projects-flex">
+                    <ProjectCard ident="Project-1" title="Money Manager" description="A finance web application that tracks user expenses and calculates 
+                    whether the user can afford a mortgage or not." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Firebase</li>
+                    </ul>}/>
+                    <ProjectCard ident="Project-2" title="Aldebaran" description="A bot application that connects to a 
+                    Discord server and plays music from YouTube, and defines words suchas a dictionary." technologies={<ul>
+                        <li>Nodejs</li>
+                        <li>AWS</li>
+                    </ul>} 
+                        repo="https://github.com/Tronax1/Aldebaran-"/>
+                    <ProjectCard ident="Project-3" title="Knight's Move Game" description="A player vs AI game where both players move a chess 
+                    knight around a 4x4 board. You cannot move the knight on the same square again, and the 
+                    loose is the one that ran out ofmoves" 
+                        repo="https://github.com/Tronax1/Knights-game" technologies={<ul>
+                            <li>C++</li>
+                        </ul>}/>
+                    <ProjectCard ident="Project-4" title="Tic-Tac-Toe" description="A player vs AI Tic-Tac-Toe game" 
+                        repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul>
+                            <li>Java</li>
+                        </ul>}/>
+                    <ProjectCard ident="Project-5" title="Scientific Calculator" description="Simple calculator that also has 
+                    trigonometric functions"
+                        repo="https://github.com/Tronax1/Calculator" technologies={<ul>
+                            <li>C++</li>
+                        </ul>}/>
+                </div>
+            </div>
+        )
+    }
 }

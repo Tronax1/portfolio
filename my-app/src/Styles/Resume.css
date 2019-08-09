@@ -1,0 +1,70 @@
+@keyframes Showup{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.Resume-card-flex{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 13vh;
+}
+body{
+  background-repeat: no-repeat;
+  
+  background:
+  radial-gradient(circle farthest-side at 0% 50%,#fca311 23.5%,rgba(240,166,17,0) 0)21px 30px, no-repeat,
+  radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+  linear-gradient(#fca311 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fca311 0)0 0,
+  linear-gradient(150deg,#fca311 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fca311 0)0 0,
+  linear-gradient(30deg,#fca311 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fca311 0)0 0,
+  linear-gradient(90deg,#B71 2%,#fca311 0,#fca311 98%,#B71 0%)0 0 #fca311;
+  background-attachment: fixed;
+  background-size: 40px 60px;
+}
+#USF{
+  width: 15vw;
+  height: 15vh;
+  margin-left: 35%;
+}
+#p-1{
+  opacity: 0;
+  animation: Showup 0.5s ease-in 0.8s 1 forwards;
+}
+#p-2{
+  opacity: 0;
+  animation: Showup 0.5s ease-in 1s 1 forwards;
+}
+#p-3{
+  opacity: 0;
+  animation: Showup 0.5s ease-in 1.2s 1 forwards;
+}
+.Resume-card-flex a{
+  width: 70%;
+  height: 8vh;
+  text-decoration: none;
+  background-color: darkblue;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4vh;
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  border-radius: 7px;
+  transition: all .4s ease-in-out;
+  box-shadow: 5px 5px #888888;
+}
+.Resume-card-flex a:hover{
+  background-color: red; 
+  transform: scale(1.2);
+}
+@media only screen and (min-width: 768px){
+  .Resume-card-flex{
+    margin-left: 20vw;
+  }
+  .Resume-card-flex a{
+    width: 20vw;
+  }
+}

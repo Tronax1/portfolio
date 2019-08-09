@@ -1,0 +1,62 @@
+.Form-background{
+    margin-top: 20vh;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #14213d;
+    height: 75vh;
+    width: 70vw;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 15px 15px #888888;
+}
+.Form-background input{
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    border-style: none;
+    font-family: 'Slabo 27px', serif;
+}
+.Form-background textarea{
+    width: 40vw;
+    font-size: 1.4rem;
+    height: 17vh;
+    border-radius: 6px;
+    border-style: none;
+    font-family: 'Slabo 27px', serif;
+}
+.Form-background button{
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    background-color: greenyellow;
+    border-style: none;
+    transition-duration: 0.3s;
+    font-family: 'Slabo 27px', serif;
+}
+.Form-background button:hover{
+    background-color: red;
+}
+.Form-background h1{
+    color: white;
+    font-size: 1.4rem;
+}
+#field-1{
+    opacity: 0;
+    animation: Showup 0.5s ease-in 0.8s 1 forwards;
+}
+#field-2{
+    opacity: 0;
+    animation: Showup 0.5s ease-in 0.9s 1 forwards;
+}
+#field-3{
+    opacity: 0;
+    animation: Showup 0.5s ease-in 1s 1 forwards;
+}
+#field-4{
+    opacity: 0;
+    animation: Showup 0.5s ease-in 1.1s 1 forwards;
+}

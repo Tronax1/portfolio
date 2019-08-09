@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-import Home from "./Components//Home Page/Home"
+import Home from "./Components//Home/Home"
 import About from "./Components/About/About"
 import Contact from "./Components/Contact/Contact"
 import Projects from "./Components/Projects/Projects"
-import NavBar from "./Components/NavigationBar/NavBar"
-import Resume from "./Components/Resume page/Resume"
+import NavBar from "./Components/NavigationBar/Navbar"
+import Resume from "./Components/Resume Page/Resume"
 
 class App extends Component {
   render() {
