@@ -46,7 +46,17 @@ app.post('/api/form', (req, res) => {
     })
 })
 
+if (process.env.NODE_ENV === 'production') {
+    // Exprees will serve up production assets
+    app.use(express.static('my-app/build'));
 
-const port = 5000;
+    // Express serve up index.html file if it doesn't recognize route
+    const path = require('path');
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'my-app', 'build', 'index.html'));
+    });
+}
 
-app.listen(process.env.PORT || port, '0.0.0.0', () => console.log(`Server started running on port ${port}`));
+const port = process.env.PORT || 5000;
+
+app.listen(port, '0.0.0.0', () => console.log(`Server started running on port ${port}`));
