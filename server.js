@@ -47,6 +47,6 @@ app.post('/api/form', (req, res) => {
 })
 
 
-const PORT = 5000;
+const port = 5000;
 
-app.listen(process.env.PORT || PORT, () => console.log(`Server started running on port ${PORT}`));
+app.listen(process.env.PORT || port, () => console.log(`Server started running on port ${port}`));
