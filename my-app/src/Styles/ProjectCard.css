@@ -27,6 +27,7 @@
     padding-right: 1vw;
     transition: all .4s ease-in-out;
     border-style: none;
+    align-items: flex-end;
 }
 .Project-Card-Body a:hover{
     background-color: red;
