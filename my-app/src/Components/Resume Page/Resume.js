@@ -29,7 +29,7 @@ export default class Resume extends Component {
                             <li>Bilingual: English (Fluent), Spanish (Native)</li>
                             <li>Amazon Web Services EC2  <i className="fab fa-aws"></i></li> 
                         </ul>} />
-                        <ResumeCard header="Experience" ident="p-3" content={<p><strong>Programming Tutor </strong>,05/2017 to 08/2017 Colegio Albania–Mushaisa,
+                        <ResumeCard header="Experience" ident="p-3" content={<p><strong>Programming Tutor </strong><br/>05/2017 to 08/2017<br/> Colegio Albania–Mushaisa,
                             La Guajira <ul>
                                     <li>
                                         Collaborated with a team of faculty to develop after-school tutorial 

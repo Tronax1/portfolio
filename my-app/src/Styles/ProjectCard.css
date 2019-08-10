@@ -9,6 +9,7 @@
     margin-bottom: 5vw;
     display: flex;
     flex-direction: column;
+    
 }
 .Project-Card:hover{
     transform: scale(1.2);
@@ -37,6 +38,10 @@
     transition: all .4s ease-in-out;
     border-style: none;
     align-items: flex-end;
+}
+.Project-Card-Footer{
+    padding-bottom: 20px;
+    margin-top: auto;
 }
 .Project-Card-Footer a:hover{
     background-color: red;

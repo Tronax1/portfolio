@@ -20,6 +20,7 @@
     border-radius: 6px;
     border-style: none;
     font-family: 'Slabo 27px', serif;
+    padding-left: 10px;
 }
 .Form-background textarea{
     width: 40vw;
@@ -28,20 +29,24 @@
     border-radius: 6px;
     border-style: none;
     font-family: 'Slabo 27px', serif;
+    padding-left: 10px;
 }
 .Form-background button{
     width: 40vw;
     height: 8vh;
     font-size: 1.4rem;
     border-radius: 6px;
-    background-color: greenyellow;
-    border-style: none;
+    background-color: transparent;
+    border-style: solid;
     transition-duration: 0.3s;
     font-family: 'Slabo 27px', serif;
+    color: white;
 }
 .Form-background button:hover{
-    background-color: red;
+    background-color: #fca311;
+    color: black;
 }
+
 .Form-background h1{
     color: white;
     font-size: 1.4rem;

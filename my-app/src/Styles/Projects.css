@@ -1,9 +1,9 @@
 .Projects-flex{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 18vh;
-    margin-left: 5vh;
+    margin-left: 12vw;
     width: 60vw;
 }
 #Project-1{
@@ -30,7 +30,8 @@
     .Projects-flex{
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 15vw;
-        justify-content: space-evenly;
+        margin-left: 8vw;
+        justify-content: space-between;
+        width: 80vw;
     }
 }
