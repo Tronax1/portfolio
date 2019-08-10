@@ -8,14 +8,18 @@
 }
 .Card-header{
     text-align: center;
-    color: #14213d;
+    color: black;
 }
 .Card-body{
     font-size: 4vh;
+    margin-left: 4vw;
 }
 @media only screen and (min-width: 768px){
     .Card-b{
         width: 60vw;
         height: 60vh;
+    }
+    .Card-body{
+        margin-left: 2vw;
     }
 }
