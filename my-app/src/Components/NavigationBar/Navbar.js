@@ -28,7 +28,7 @@ export default class Navbar extends Component {
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Resume">Resume</NavLink>
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="Projects">Projects</NavLink>
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Contact">Contact</NavLink>
-                        <button id="Mobile-Menu" onClick={this.showMenu}><Hamburger /></button>
+                        <button id="Mobile-Menu" onClick={this.showMenu}><Hamburger showX={this.state.show}/></button>
                     </div>
                 </div>
                 <MobileMenu onClose={this.showMenu} show={this.state.show}/>
