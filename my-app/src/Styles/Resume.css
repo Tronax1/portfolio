@@ -15,15 +15,8 @@
 body{
   background-repeat: no-repeat;
   
-  background:
-  radial-gradient(circle farthest-side at 0% 50%,#fca311 23.5%,rgba(240,166,17,0) 0)21px 30px, no-repeat,
-  radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
-  linear-gradient(#fca311 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fca311 0)0 0,
-  linear-gradient(150deg,#fca311 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fca311 0)0 0,
-  linear-gradient(30deg,#fca311 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fca311 0)0 0,
-  linear-gradient(90deg,#B71 2%,#fca311 0,#fca311 98%,#B71 0%)0 0 #fca311;
+  background-color: #fca311;
   background-attachment: fixed;
-  background-size: 40px 60px;
 }
 #USF{
   width: 45vw;
@@ -32,15 +25,15 @@ body{
 }
 #p-1{
   opacity: 0;
-  animation: Showup 0.5s ease-in 0.8s 1 forwards;
+  animation: Showup 0.5s ease-in 0.4s 1 forwards;
 }
 #p-2{
   opacity: 0;
-  animation: Showup 0.5s ease-in 1s 1 forwards;
+  animation: Showup 0.5s ease-in 0.6s 1 forwards;
 }
 #p-3{
   opacity: 0;
-  animation: Showup 0.5s ease-in 1.2s 1 forwards;
+  animation: Showup 0.5s ease-in 0.8s 1 forwards;
 }
 .Resume-card-flex a{
   width: 70%;

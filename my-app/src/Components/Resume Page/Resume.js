@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Delay from '../Animation/Delay'
 import ResumeCard from './ResumeCard'
 import USFlogo from './University of South Florida Logo.png'
 import CV from './CV Jorge Villarreal.pdf'
@@ -13,7 +12,6 @@ export default class Resume extends Component {
     render() {
         return (
             <div>
-                <Delay/>
                     <div className="Resume-card-flex">
                         <ResumeCard header="Education" ident="p-1" content={<p><strong>Bachelor of Science: </strong> 
                         Computer Engineering, Expected December 2019<br/>

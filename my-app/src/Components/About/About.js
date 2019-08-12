@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Delay from '../Animation/Delay'
 
 import '../../Styles/About.css'
 
@@ -10,7 +9,6 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Delay/>
                 <div className="About-Content">
                     <h1>About Me</h1>
                     <p><strong>I am a self taught web developer with a strong background in object oriented programming.
