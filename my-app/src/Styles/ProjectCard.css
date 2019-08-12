@@ -14,6 +14,7 @@
     margin-left: 22vw;
     margin-top: 5vh;
     box-shadow: 5px 15px gray;
+    animation: float 6s ease-in-out infinite;
 }
 .Project-Card-Body{
     width: 80vw;
