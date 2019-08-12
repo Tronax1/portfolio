@@ -16,6 +16,7 @@ export default class ProjectCard extends Component {
                         <p>{this.props.description}</p>
                     </div>
                     <div className="Project-Card-Footer" style={{color: this.props.fontColor}}>
+                        <h3>Technologies</h3>
                         {this.props.technologies}
                         <a href={this.props.repo} target="_blank" rel="noopener noreferrer" 
                         >View Source</a>

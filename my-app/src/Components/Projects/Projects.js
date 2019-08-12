@@ -11,30 +11,26 @@ export default class Projects extends Component {
         return (
             <div>
                 <div className="Projects-flex">
-                    <ProjectCard color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" description="A finance web application that tracks user expenses and calculates 
-                    whether the user can afford a mortgage or not." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
-                        <li>React</li>
+                    <ProjectCard color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" description="A finance web application that tracks user expenses and calculates whether the user can afford a mortgage or not." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
+                        <li>React <i className="fab fa-react"></i></li>
                         <li>Redux</li>
-                        <li>Firebase</li>
+                        <li>Firebase <i className="fas fa-fire"></i></li>
                     </ul>}/>
-                    <ProjectCard color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" description="A bot application that connects to a 
-                    Discord server and plays music from YouTube, and defines words suchas a dictionary." technologies={<ul>
-                        <li>Nodejs</li>
-                        <li>AWS</li>
+                    <ProjectCard color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" description="A bot application that connects to a Discord server and plays music from YouTube, and defines words like a dictionary." technologies={<ul>
+                        <li>Nodejs  <i class="fab fa-node"></i></li>
+                        <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 
                         repo="https://github.com/Tronax1/Aldebaran-"/>
                     <ProjectCard color="#b9a44c" fontColor="#1b1b1e" ident="Project-3" title="Knight's Move Game" description="A player vs AI game where both players move a chess 
-                    knight around a 4x4 board. You cannot move the knight on the same square again, and the 
-                    loose is the one that ran out ofmoves" 
+                    knight around a 4x4 board. You cannot move the knight on the same square again, and defeat occurs when you run out of moves." 
                         repo="https://github.com/Tronax1/Knights-game" technologies={<ul>
                             <li>C++</li>
                         </ul>}/>
-                    <ProjectCard color="#85cb33" fontColor="#1b1b1e" ident="Project-4" title="Tic-Tac-Toe" description="A player vs AI Tic-Tac-Toe game" 
+                    <ProjectCard color="#85cb33" fontColor="#1b1b1e" ident="Project-4" title="Tic-Tac-Toe" description="A player vs AI Tic-Tac-Toe game." 
                         repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul>
-                            <li>Java</li>
+                            <li>Java <i className="fab fa-java"></i></li>
                         </ul>}/>
-                    <ProjectCard color="#e63462" fontColor="#1b1b1e" ident="Project-5" title="Scientific Calculator" description="Simple calculator that also has 
-                    trigonometric functions"
+                    <ProjectCard color="#e63462" fontColor="#1b1b1e" ident="Project-5" title="Scientific Calculator" description="Simple calculator that also has trigonometric functions."
                         repo="https://github.com/Tronax1/Calculator" technologies={<ul>
                             <li>C++</li>
                         </ul>}/>

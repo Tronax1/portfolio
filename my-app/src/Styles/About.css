@@ -4,6 +4,8 @@
     margin-top: 16vh;
     text-align: center;
     font-family: 'Slabo 27px', serif;
+    opacity: 0;
+    animation: Showup 0.5s ease-in 0.4s 1 forwards;
 }
 
 .About-Content > h1{
@@ -11,4 +13,17 @@
 }
 .About-Content > p{
     font-size: 2.5rem;
+}
+.About-Content img{
+    width: 90vw;
+    height: 50vh;
+    margin-left: 2vw;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 768px){
+    .About-Content img{
+        width: 30vw;
+        height: 60vh;
+        margin-left: 33vw;
+    }
 }
