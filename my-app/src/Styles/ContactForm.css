@@ -31,7 +31,7 @@
     font-family: 'Slabo 27px', serif;
     padding-left: 10px;
 }
-.Form-background button{
+.Form-background .Submit-form{
     width: 40vw;
     height: 8vh;
     font-size: 1.4rem;
@@ -42,7 +42,7 @@
     font-family: 'Slabo 27px', serif;
     color: white;
 }
-.Form-background button:hover{
+.Form-background .Submit-form:hover{
     background-color: #fca311;
     color: black;
 }

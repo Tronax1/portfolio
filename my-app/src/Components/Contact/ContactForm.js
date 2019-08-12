@@ -38,10 +38,13 @@ export default class ContactForm extends Component {
             <div>
                 <form className="Form-background" onSubmit={this.handleSubmit}>
                     <h1>CONTACT ME</h1>
-                    <input type="email" placeholder="Email" name="email" id="field-1" onChange={this.handleChange} value={this.state.email}/>
-                    <input type="text" placeholder="Subject" name="subject" id="field-2" onChange={this.handleChange} value={this.state.subject}/>
-                    <textarea rows="10" cols="30" placeholder="Message" name="message" id="field-3" onChange={this.handleChange} value={this.state.message}></textarea>
-                    <button id="field-4" onClick={this.handleSubmit}>Submit</button>
+                    <input type="email" placeholder="Email" name="email" id="field-1" 
+                    maxLength="50" onChange={this.handleChange} value={this.state.email} required/>
+                    <input type="text" placeholder="Subject" name="subject" id="field-2" 
+                    maxLength="50" onChange={this.handleChange} value={this.state.subject} required/>
+                    <textarea rows="10" cols="30" placeholder="Message" name="message" id="field-3" 
+                    maxLength="250" onChange={this.handleChange} value={this.state.message} required></textarea>
+                    <input type="submit" id="field-4" className="Submit-form" value="Submit" />
                 </form>
             </div>
         )
