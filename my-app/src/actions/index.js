@@ -1,20 +1,14 @@
 import {FETCH_LANGUAGE} from './types';
 
-var english = true;
-export const fetchLanguage = () => dispatch =>{
-    console.log(english);
+export const changeEnglish = () => dispatch =>{
     dispatch({
         type: FETCH_LANGUAGE,
-        payload: english
+        payload: true
     })
 }
-export const changeLanguage = () => dispatch =>{
-    
-    if(!english){
-        english = true;
-    }
-    else{
-        english = false;
-    }
-    
+export const changeSpanish = () => dispatch =>{  
+    dispatch({
+        type: FETCH_LANGUAGE,
+        payload: false
+    })
 }

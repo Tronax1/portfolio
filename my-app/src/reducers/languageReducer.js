@@ -5,6 +5,6 @@ export default (state = null, action) => {
         case FETCH_LANGUAGE:
             return action.payload;
         default:
-            return state;
+            return true;
     }
 }

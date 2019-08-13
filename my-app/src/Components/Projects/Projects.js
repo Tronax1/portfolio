@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import ProjectCard from './ProjectCard'
+import {connect} from 'react-redux'
 
 import '../../Styles/Projects.css'
 
-export default class Projects extends Component {
+class Projects extends Component {
     componentDidMount(){
         window.scrollTo(0,0);
     }
     render() {
         return (
             <div>
-                <div className="Projects-flex">
+                {this.props.language ? (<div className="Projects-flex">
                     <ProjectCard color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" description="A finance web application that tracks user expenses and calculates whether the user can afford a mortgage or not." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
                         <li>React <i className="fab fa-react"></i></li>
                         <li>Redux</li>
@@ -34,8 +35,38 @@ export default class Projects extends Component {
                         repo="https://github.com/Tronax1/Calculator" technologies={<ul>
                             <li>C++</li>
                         </ul>}/>
-                </div>
+                </div>)
+                :
+                (<div className="Projects-flex">
+                        <ProjectCard color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" description="Una aplicación web que almacena los gastos de un usuario y calcula si un usuario puede pagar una hipoteca." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
+                        <li>React <i className="fab fa-react"></i></li>
+                        <li>Redux</li>
+                        <li>Firebase <i className="fas fa-fire"></i></li>
+                    </ul>}/>
+                        <ProjectCard color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" description="Una aplicación que se conecta a un servidor Discord, reproduce música de YouTube ydefine palabras como un diccionario." technologies={<ul>
+                        <li>Nodejs  <i class="fab fa-node"></i></li>
+                        <li>AWS  <i className="fab fa-aws"></i></li>
+                    </ul>} 
+                        repo="https://github.com/Tronax1/Aldebaran-"/>
+                        <ProjectCard color="#b9a44c" fontColor="#1b1b1e" ident="Project-3" title="Juego del Caballo" description="Un juego de jugador vs computadora donde ambos mueven un caballo de ajedrez en un tablero 4x4. El jugador que se quede sin jugadas pierde." 
+                        repo="https://github.com/Tronax1/Knights-game" technologies={<ul>
+                            <li>C++</li>
+                        </ul>}/>
+                        <ProjectCard color="#85cb33" fontColor="#1b1b1e" ident="Project-4" title="Tic-Tac-Toe" description="Un juego de jugador vs computadora Tic-Tac-Toe." 
+                        repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul>
+                            <li>Java <i className="fab fa-java"></i></li>
+                        </ul>}/>
+                        <ProjectCard color="#e63462" fontColor="#1b1b1e" ident="Project-5" title="Calculadora Científica" description="Calculadora científica con funciones trigonométricas."
+                        repo="https://github.com/Tronax1/Calculator" technologies={<ul>
+                            <li>C++</li>
+                        </ul>}/>
+                </div>)}
+                
             </div>
         )
     }
 }
+function mapStatetoProps({language}){
+    return {language};
+}
+export default connect(mapStatetoProps)(Projects);

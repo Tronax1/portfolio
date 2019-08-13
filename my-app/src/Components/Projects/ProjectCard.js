@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import ProjectImage from './ProjectImage.jpg'
+import {connect} from 'react-redux'
 
 import '../../Styles/ProjectCard.css'
 
-export default class ProjectCard extends Component {
+class ProjectCard extends Component {
     render() {
         return (
             <div>
@@ -16,13 +17,19 @@ export default class ProjectCard extends Component {
                         <p>{this.props.description}</p>
                     </div>
                     <div className="Project-Card-Footer" style={{color: this.props.fontColor}}>
-                        <h3>Technologies</h3>
+                        {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                         {this.props.technologies}
-                        <a href={this.props.repo} target="_blank" rel="noopener noreferrer" 
-                        >View Source</a>
+                        {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                        >View Source</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                        >Ver Código</a>)}
+                        
                     </div>
                 </div>
             </div>
         )
     }
 }
+function mapStatetoProps({language}){
+    return {language};
+}
+export default connect(mapStatetoProps)(ProjectCard);
