@@ -26,7 +26,7 @@
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite;
     font-family: 'Slabo 27px', serif;
-    
+    overflow: hidden;
 }
 .Home-flex{
     display: flex;
@@ -64,7 +64,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-left: 8vw;
-    width: 50vh;
 }
 .Link-icons{
     transition: all .2s ease-in-out;
