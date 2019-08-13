@@ -26,7 +26,6 @@
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite;
     font-family: 'Slabo 27px', serif;
-    overflow: hidden;
 }
 .Home-flex{
     display: flex;
