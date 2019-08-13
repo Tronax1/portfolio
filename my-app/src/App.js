@@ -7,8 +7,13 @@ import Contact from "./Components/Contact/Contact"
 import Projects from "./Components/Projects/Projects"
 import NavBar from "./Components/NavigationBar/Navbar"
 import Resume from "./Components/Resume Page/Resume"
+import {connect} from 'react-redux'
+import {fetchLanguage} from './actions'
 
 class App extends Component {
+  componentDidMount(){
+    this.props.fetchLanguage();
+  }
   render() {
     return (
       
@@ -27,5 +32,4 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+export default connect(null, {fetchLanguage})(App);

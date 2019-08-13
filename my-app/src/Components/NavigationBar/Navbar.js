@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import Hamburger from './Hamburger'
 import MobileMenu from './MobileMenu'
+import {changeLanguage} from '../../actions'
+import {connect} from 'react-redux'
 
 import '../../Styles/NavBar.css'
 
-export default class Navbar extends Component {
+class Navbar extends Component {
     constructor(props){
         super(props);
         this.showMenu = this.showMenu.bind(this);
@@ -28,6 +30,7 @@ export default class Navbar extends Component {
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Resume">Resume</NavLink>
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="Projects">Projects</NavLink>
                         <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Contact">Contact</NavLink>
+                        <button onClick={() => this.props.changeLanguage()}>Language</button>
                         <button id="Mobile-Menu" onClick={this.showMenu}><Hamburger showX={this.state.show}/></button>
                     </div>
                 </div>
@@ -36,3 +39,4 @@ export default class Navbar extends Component {
         )
     }
 }
+export default connect(null, {changeLanguage})(Navbar);
