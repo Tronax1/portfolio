@@ -8,7 +8,7 @@ import Projects from "./Components/Projects/Projects"
 import NavBar from "./Components/NavigationBar/Navbar"
 import Resume from "./Components/Resume Page/Resume"
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       
@@ -27,5 +27,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

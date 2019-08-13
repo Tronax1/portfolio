@@ -26,19 +26,20 @@
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite;
     font-family: 'Slabo 27px', serif;
-    
+    overflow: hidden;
+}
+.Home-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 5vh;
 }
 .Welcome-Message{
-    position: absolute;
-    top: 5%;
-    left: 25%;
     font-size: 4rem;
     color: #14213d;
+    text-align: center;
 }
 .Project-Redirect{
-    position: absolute;
-    top: 55vh;
-    left: 27vw;
     padding: 20px;
     font-size: 2.5rem;
     text-decoration: none;
@@ -48,6 +49,9 @@
     color: white;
     transition: all .4s ease-in-out;
     box-shadow: 5px 10px #888888;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
 }
 .Project-Redirect:hover{
     background-color: white;
@@ -55,13 +59,11 @@
     transform: scale(1.2);
 }
 .Link-refs{
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 75vh;
-    left: 0;
     justify-content: space-evenly;
-    width: 55vh;
+    margin-left: 8vw;
 }
 .Link-icons{
     transition: all .2s ease-in-out;
@@ -77,13 +79,14 @@
     .Project-Redirect{
         top: 45vh;
         left: 40vw;
-    }
-    .Link-refs{
-        top: 65vh;
-        left: 30vw;
-        width: 70vh;
+        margin-left: 43vw;
+        margin-right: 43vw;
     }
     .Welcome-Message{
         top: 20%;
+    }
+    .Link-refs{
+        margin-left: 25vw;
+        width: 50vw;
     }
 }
