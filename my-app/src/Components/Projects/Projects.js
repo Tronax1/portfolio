@@ -43,7 +43,7 @@ class Projects extends Component {
                         <li>Redux</li>
                         <li>Firebase <i className="fas fa-fire"></i></li>
                     </ul>}/>
-                        <ProjectCard color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" description="Una aplicación que se conecta a un servidor Discord, reproduce música de YouTube ydefine palabras como un diccionario." technologies={<ul>
+                        <ProjectCard color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" description="Una aplicación que se conecta a un servidor Discord, reproduce música de YouTube y define palabras como un diccionario." technologies={<ul>
                         <li>Nodejs  <i class="fab fa-node"></i></li>
                         <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 

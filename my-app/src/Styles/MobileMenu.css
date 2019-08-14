@@ -15,6 +15,19 @@
     width: 100%;
     text-align: center;
 }
+.Nav-Elements-Mobile{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto Slab";
+    padding: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.5rem;
+}
+.Nav-Elements-Mobile:hover{
+    color: black;
+    background-color: white;
+}
 @media only screen and (min-width: 768px){
     .Nav-Mobile{
         display: none;
