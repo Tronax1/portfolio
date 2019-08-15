@@ -12,35 +12,18 @@ class Navbar extends Component {
     constructor(props){
         super(props);
         this.showMenu = this.showMenu.bind(this);
-        this.handleScroll = this.handleScroll.bind(this);
         this.state = {
             show: false,
             prevScrollpos: window.pageYOffset,
             visible: true
         }
     }
-    componentDidMount(){
-        window.addEventListener("scroll", this.handleScroll);
-    }
-    componentWillUnmount(){
-        window.removeEventListener("scroll", this.handleScroll);
-    }
     showMenu(){
         this.setState({
             show: !this.state.show
         });
     }
-    handleScroll(){
-        const {prevScrollpos} = this.state;
-        const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollpos > currentScrollPos;
-        this.setState({
-            prevScrollpos: currentScrollPos,
-            visible
-        })
-    }
     render() {
-        if(this.state.visible){
             return (
                 <React.Fragment>
                     <div className="Nav">
@@ -76,10 +59,6 @@ class Navbar extends Component {
                     <MobileMenu onClose={this.showMenu} show={this.state.show} />
                 </React.Fragment>
             )
-        }
-        else{
-            return null;
-        }
     }
 }
 function mapStatetoProps({language}){
