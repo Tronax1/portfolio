@@ -9,6 +9,16 @@ import NavBar from "./Components/NavigationBar/Navbar"
 import Resume from "./Components/Resume Page/Resume"
 
 export default class App extends Component {
+  componentDidMount(){
+    window.addEventListener('touchmove', (e)=>{
+      e.preventDefault();
+    })
+  }
+  componentWillUnmount(){
+    window.removeEventListener('touchmove', (e)=>{
+      e.preventDefault();
+    })
+  }
   render() {
     return (
       
