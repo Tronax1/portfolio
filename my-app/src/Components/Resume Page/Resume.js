@@ -27,9 +27,13 @@ class Resume extends Component {
         return (
             <div>
                 {this.props.language ? (<div className="Resume-card-flex">
-                    <ResumeCard header="Education" ident="p-1" content={<p><strong>University of South Florida </strong>
-                        Expected December 2019<br />
-                        B.S. in Computer Engineering<br /><br /> <img id="USF" src={USFlogo} alt="" /></p>} />
+                    <ResumeCard header="Education" ident="p-1" content={
+                        <div className="Education-Margin">
+                            <p><strong>University of South Florida </strong>
+                                Expected December 2019<br />
+                                B.S. in Computer Engineering<br /><br /> <img id="USF" src={USFlogo} alt="" /></p>
+                        </div>
+                    } />
                     <ResumeCard header="Skills" ident="p-2" content={
                         <div className="Skills-flex">
                             <img id="Skill-icons" src={reactLogo} alt=""/>
@@ -66,9 +70,13 @@ class Resume extends Component {
                     } />
                     <a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>
                 </div>) : (<div className="Resume-card-flex">
-                        <ResumeCard header="Educación" ident="p-1" content={<p><strong>University of South Florida </strong>
-                            Esperado Diciembre 2019<br />
-                            B.S. en Computer Engineering<br /><br /> <img id="USF" src={USFlogo} alt="" /></p>} />
+                        <ResumeCard header="Educación" ident="p-1" content={
+                            <div className="Education-Margin">
+                                <p><strong>University of South Florida </strong>
+                                    Esperado Diciembre 2019<br />
+                                    B.S. en Computer Engineering<br /><br /> <img id="USF" src={USFlogo} alt="" /></p>
+                            </div>
+                        } />
                         <ResumeCard header="Habilidades" ident="p-2" content={<div className="Skills-flex">
                             <img id="Skill-icons" src={reactLogo} alt="" />
                             <img id="Skill-icons" src={reduxIcon} alt="" />

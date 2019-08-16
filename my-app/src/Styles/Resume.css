@@ -29,6 +29,10 @@
   margin-left: 3vw;
   margin-right: 3vw;
 }
+.Education-Margin{
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -69,7 +73,7 @@ body{
   transition: all .4s ease-in-out;
   box-shadow: 5px 5px #888888;
   margin-left: 8vw;
-  margin-top: 10vh;
+  margin-top: 80px;
 }
 .Resume-card-flex a:hover{
   background-color: red; 
@@ -98,6 +102,12 @@ body{
     height: 15vh;
   }
   .Experience-Margin{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .Education-Margin{
     margin-left: 3vw;
     margin-right: 3vw;
     padding-top: 5vh;
