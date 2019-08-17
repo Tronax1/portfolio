@@ -71,14 +71,16 @@ body{
   background-color: darkblue;
   text-align: center;
   font-size: 2rem;
-  margin-top: 4vh;
+  margin-top: 10vh;
   color: white;
   font-family: 'Slabo 27px', serif;
   border-radius: 7px;
   transition: all .4s ease-in-out;
   box-shadow: 5px 5px #888888;
   margin-left: 8vw;
-  margin-top: 80px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: Showup 0.5s ease-in 0.4s 1 forwards;
 }
 .Resume-card-flex a:hover{
   background-color: red; 
@@ -90,9 +92,8 @@ body{
   }
   .Resume-card-flex a{
     width: 20vw;
-    margin-left: 35vw;
-    margin-bottom: 30px;
-    margin-top: 4vh;
+    margin-left: 38vw;
+    margin-top: 10vh;
   }
   #USF{
     width: 15vw;

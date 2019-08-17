@@ -29,6 +29,7 @@ class Resume extends Component {
         return (
             <div>
                 {this.props.language ? (<div className="Resume-card-flex">
+                    <a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>
                     <ResumeCard header="Education" ident="p-1" content={
                         <ResumeSubCard information={
                             <div className="Education-Margin">
@@ -91,8 +92,8 @@ class Resume extends Component {
                             </div>
                         }/>
                     } />
-                    <a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>
                 </div>) : (<div className="Resume-card-flex">
+                        <a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar PDF</a>
                         <ResumeCard header="Educación" ident="p-1" content={
                             <ResumeSubCard information={
                                 <div className="Education-Margin">
@@ -108,19 +109,24 @@ class Resume extends Component {
                                     <img id="Skill-icons" src={reactLogo} alt="" />
                                     <img id="Skill-icons" src={reduxIcon} alt="" />
                                     <img id="Skill-icons" src={firebaseIcon} alt="" />
+                                    <img id="Skill-icons" src={nodeIcon} alt="" />
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
                                     <img id="Skill-icons" src={htmlIcon} alt="" />
                                     <img id="Skill-icons" src={cssIcon} alt="" />
-                                    <img id="Skill-icons" src={nodeIcon} alt="" />
-                                    <img id="Skill-icons" src={cppIcon} alt="" />
+                                    <img id="Skill-icons" src={jsLogo} alt="" />
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
+                                    <img id="Skill-icons" src={cppIcon} alt="" />
                                     <img id="Skill-icons" src={javaIcon} alt="" />
+                                </div>
+                            } />
+                            <ResumeSubCard information={
+                                <div className="Skills-flex">
                                     <img id="Skill-icons" src={awsIcon} alt="" />
                                     <img id="Skill-icons" src={gitIcon} alt="" />
                                     <img id="Skill-icons" src={linuxIcon} alt="" />
@@ -146,7 +152,6 @@ class Resume extends Component {
                                 </div>
                         }/>
                     } />
-                    <a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar PDF</a>
                 </div>)}
                 
             </div>
