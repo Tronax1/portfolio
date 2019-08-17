@@ -6,7 +6,6 @@ import '../../Styles/Home.css'
 
 class Home extends Component {
     render() {
-        console.log(this.props.language);
         return (
             <div>
                 {this.props.language ? (<div className="Home-b" >
