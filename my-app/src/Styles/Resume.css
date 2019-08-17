@@ -25,6 +25,11 @@
   flex-wrap: wrap;
   width: 80%;
 }
+.Sub-Cards-Flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .Experience-Margin{
   margin-left: 3vw;
   margin-right: 3vw;
@@ -98,7 +103,7 @@ body{
     flex-direction: row;
   }
   #Skill-icons{
-    width: 13vw;
+    width: 10vw;
     height: 15vh;
   }
   .Experience-Margin{

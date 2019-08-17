@@ -1,0 +1,8 @@
+.Sub-Card{
+    width: 80vw;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+}

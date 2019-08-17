@@ -1,6 +1,5 @@
 .Card-b{
     width: 100%;
-    height: 105vh;
     background-color: rgb(218, 213, 213);
     font-family: 'Slabo 27px', serif;
 }
@@ -18,10 +17,7 @@
 .Card-body{
     font-size: 4vh;
     margin-left: 4vw;
-    background-color: white;
     width: 80vw;
-    box-shadow: 5px 10px 8px #888888;
-    border-radius: 10px;
 }
 @media only screen and (min-width: 768px){
     .Card-body{
