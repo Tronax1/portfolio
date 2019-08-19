@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const nodeMailer = require('nodemailer')
+require('dotenv').config();
 
 const app = express();
 
@@ -22,8 +23,8 @@ app.post('/api/form', (req, res) => {
             host: 'smtp.ethereal.email',
             port: 587,
             auth: {
-                user: 'mariane.sawayn@ethereal.email',
-                pass: 'aw8A6VGQfw36Dvxe1Y'
+                user: process.env.USER,
+                pass: process.env.PASS
             }
         })
 
