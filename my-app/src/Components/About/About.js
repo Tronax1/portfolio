@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SampleImage from './avatar2.png'
+import SampleImage from './pangolin6.jpg'
 import {connect} from 'react-redux'
 
 import '../../Styles/About.css'

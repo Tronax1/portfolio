@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ProjectImage from './ProjectImage.jpg'
 import {connect} from 'react-redux'
 
 import '../../Styles/ProjectCard.css'
@@ -10,7 +9,7 @@ class ProjectCard extends Component {
             <div>
                 <div id={this.props.ident} className="Project-Card" style={{backgroundColor: this.props.color}}>
                     <div className="Project-Card-Header">
-                        <img src={ProjectImage} alt=""></img>
+                        <img src={this.props.projImg} alt=""></img>
                     </div>
                     <div className="Project-Card-Body" style={{color: this.props.fontColor}}>
                         <h1>{this.props.title}</h1>
