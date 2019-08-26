@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false}))
 app.post('/api/form', (req, res) => {
     nodeMailer.createTestAccount((err, account) => {
         const htmlEmail = `
+            <h2>Subject: ${req.body.subject}</h2>
             <h3>Contact Details</h3>
             <ul>
                 <li> Email: ${req.body.email}</li>
@@ -20,8 +21,7 @@ app.post('/api/form', (req, res) => {
         `
 
         let transporter = nodeMailer.createTransport({
-            host: 'smtp.ethereal.email',
-            port: 587,
+            service: 'gmail',
             auth: {
                 user: process.env.USER,
                 pass: process.env.PASS
@@ -29,9 +29,9 @@ app.post('/api/form', (req, res) => {
         })
 
         let mailOptions = {
-            from: 'test@testaccount.com',
-            to: 'mariane.sawayn@ethereal.email',
-            replyTo: 'test@testaccount.com',
+            from: process.env.USER,
+            to: process.env.MYEMAIL,
+            replyTo: process.env.USER,
             subject: req.body.subject,
             text: req.body.message,
             html: htmlEmail
