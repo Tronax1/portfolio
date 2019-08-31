@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     render() {
         return (
             <div>
-                <div id={this.props.ident} className="Project-Card" style={{ backgroundImage: `radial-gradient(${this.props.color}, black)`}}>
+                <div id={this.props.ident} className="Project-Card" style={{ backgroundImage: `radial-gradient(circle, ${this.props.color} 10%, black)`}}>
                     <div className="Project-Card-Flex">
                         <div className="Project-Card-Header">
                             <img src={this.props.projImg} alt=""></img>

@@ -41,7 +41,7 @@
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #fca311;
+  background-image: radial-gradient(circle,#fca311 60%, white);
 }
 #USF{
   width: 45vw;
