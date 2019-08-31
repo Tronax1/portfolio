@@ -10,8 +10,8 @@
 .Project-Card-Flex{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-left: 28vw;
+    width: 80%;
+    margin-left: 10vw;
 }
 .Project-Card-Header img{
     width: 100%;
@@ -54,6 +54,10 @@
     text-align: center;
     font-size: 1.5rem;
 }
+.Project-Card-Footer div{
+    text-align: left;
+    margin-left: 30%;
+}
 .Project-Card-Footer a:hover{
     background-color: #fbfffe;
 }
@@ -68,6 +72,13 @@
     }
     .Project-Card-Body{
         width: 100%;
-        
+    }
+    .Project-Card-Flex{
+        width: 40%;
+        margin-left: 28vw;
+    }
+    .Project-Card-Footer div{
+        text-align: left;
+        margin-left: 37%;
     }
 }

@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     render() {
         return (
             <div>
-                <div id={this.props.ident} className="Project-Card" style={{backgroundColor: this.props.color}}>
+                <div id={this.props.ident} className="Project-Card" style={{ backgroundImage: `radial-gradient(${this.props.color}, black)`}}>
                     <div className="Project-Card-Flex">
                         <div className="Project-Card-Header">
                             <img src={this.props.projImg} alt=""></img>
@@ -18,7 +18,7 @@ class ProjectCard extends Component {
                         </div>
                         <div className="Project-Card-Footer" style={{ color: this.props.fontColor }}>
                             {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
-                            {this.props.technologies}
+                            <div>{this.props.technologies}</div>
                             {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
                             >View Source</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
                             >Ver Código</a>)}
