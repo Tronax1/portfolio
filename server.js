@@ -1,9 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const nodeMailer = require('nodemailer')
+const http = require('http')
 require('dotenv').config();
 
 const app = express();
+
+setInterval(()=>{
+    http.get("http://jorge-villarreal.herokuapp.com")
+}, 300000);
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false}))
