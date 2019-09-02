@@ -5,12 +5,12 @@ import {connect} from 'react-redux'
 import '../../Styles/About.css'
 
 class About extends Component {
-    componentDidMount(){
-        window.scrollTo(0,0);
+    componentWillUnmount(){
+        window.scrollTo(0, 0);
     }
     render() {
         return (
-            <div>
+            <div className="page">
                 {this.props.language ? (<div className="About-Content">
                     <h1>About Me</h1>
                     <img src={SampleImage} alt="" />

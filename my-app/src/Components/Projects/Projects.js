@@ -9,12 +9,12 @@ import ProjectImage from './ProjectImage.jpg'
 import '../../Styles/Projects.css'
 
 class Projects extends Component {
-    componentDidMount(){
+    componentWillUnmount(){
         window.scrollTo(0,0);
     }
     render() {
         return (
-            <div>
+            <div className="page">
                 {this.props.language ? (<div className="Projects-flex">
                     <ProjectCard projImg={Money} color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" description="A finance web application that tracks user expenses and calculates whether the user can afford a mortgage or not." repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
                         <li>React <i className="fab fa-react"></i></li>

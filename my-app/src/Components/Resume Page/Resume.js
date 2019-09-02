@@ -22,12 +22,12 @@ import {connect} from 'react-redux'
 import '../../Styles/Resume.css'
 
 class Resume extends Component {
-    componentDidMount(){
+    componentWillUnmount(){
         window.scrollTo(0,0);
     }
     render() {
         return (
-            <div>
+            <div className="page">
                 {this.props.language ? (<div className="Resume-card-flex">
                     <a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>
                     <ResumeCard header="Education" ident="p-1" content={

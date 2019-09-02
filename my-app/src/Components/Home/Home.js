@@ -5,10 +5,13 @@ import {connect} from 'react-redux';
 import '../../Styles/Home.css'
 
 class Home extends Component {
+    componentWillUnmount(){
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
-            <div>
-                {this.props.language ? (<div className="Home-b" >
+            <div className="Home-b">
+                {this.props.language ? (
                     <div className="Home-flex">
                         <p className="Welcome-Message" id="Initial-animation">Hello, I'm Jorge Villarreal</p>
                         <NavLink className="Project-Redirect" to="/Projects" id="Initial-animation">My Work</NavLink>
@@ -21,7 +24,7 @@ class Home extends Component {
                             </a>
                         </div>
                     </div>
-                </div>) : (<div className="Home-b" >
+                ) : (
                     <div className="Home-flex">
                         <p className="Welcome-Message" id="Initial-animation">Hola, me llamo Jorge Villarreal</p>
                         <NavLink className="Project-Redirect" to="/Projects" id="Initial-animation">Mis Proyectos</NavLink>
@@ -34,7 +37,7 @@ class Home extends Component {
                         </a>
                         </div>
                     </div>
-                </div>)}
+                )}
             </div>
         )
     }
