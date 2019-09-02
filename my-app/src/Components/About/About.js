@@ -11,20 +11,19 @@ class About extends Component {
     render() {
         return (
             <div className="page">
-                {this.props.language ? (<div className="About-Content">
-                    <h1>About Me</h1>
+                <div className="About-Content">
+                    <h1>{this.props.language ? ("About Me") : ("Acerca de Mi")}</h1>
                     <img src={SampleImage} alt="" />
-                    <p><strong>I am a self taught web developer with a strong background in object oriented programming.
+                    {this.props.language ? 
+                        (<p><strong>I am a self taught web developer with a strong background in object oriented programming.
                         I also like to play chess and learn new technologies during my free time.</strong>
-                    </p>
-                </div>) : (<div className="About-Content">
-                    <h1>Acerca de Mi</h1>
-                    <img src={SampleImage} alt="" />
-                    <p><strong>Soy un desarrollador web autodidacto con conocimientos en programación orientada a objetos. 
+                        </p>)
+                    :
+                        (<p><strong>Soy un desarrollador web autodidacto con conocimientos en programación orientada a objetos.
                         Tambien me gusta jugar ajedrez y aprender nuevas tecnologias en mi tiempo libre. </strong>
-                    </p>
-                </div>)}
-                
+                        </p>)
+                    }
+                </div>
             </div>
         )
     }
