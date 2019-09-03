@@ -13,16 +13,18 @@ class About extends Component {
             <div className="page">
                 <div className="About-Content">
                     <h1>{this.props.language ? ("About Me") : ("Acerca de Mi")}</h1>
-                    <img src={SampleImage} alt="" />
-                    {this.props.language ? 
-                        (<p><strong>I am a self taught web developer with a strong background in object oriented programming.
-                        I also like to play chess and learn new technologies during my free time.</strong>
-                        </p>)
-                    :
-                        (<p><strong>Soy un desarrollador web autodidacto con conocimientos en programación orientada a objetos.
-                        Tambien me gusta jugar ajedrez y aprender nuevas tecnologias en mi tiempo libre. </strong>
-                        </p>)
-                    }
+                    <div className="Content-Flex">
+                        <img src={SampleImage} alt="" />
+                        {this.props.language ? 
+                            (<p><strong>I am a self taught web developer with a strong background in object oriented programming.
+                            I also like to play chess and learn new technologies during my free time.</strong>
+                            </p>)
+                        :
+                            (<p><strong>Soy un desarrollador web autodidacto con conocimientos en programación orientada a objetos.
+                            Tambien me gusta jugar ajedrez y aprender nuevas tecnologias en mi tiempo libre. </strong>
+                            </p>)
+                        }
+                    </div>
                 </div>
             </div>
         )
