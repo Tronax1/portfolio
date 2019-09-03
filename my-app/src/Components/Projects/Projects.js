@@ -16,7 +16,7 @@ class Projects extends Component {
         return (
             <div className="page">
                 <div className="Projects-flex">
-                    <ProjectCard projImg={Money} color="#96031a" fontColor="#fbfffe" ident="Project-1" title="Money Manager" 
+                    <ProjectCard projImg={Money} color="#008073" fontColor="#000f08" ident="Project-1" title="Money Manager" 
                     description={
                         this.props.language ? 
                         ("A finance web application that tracks user expenses and calculates whether the user can afford a mortgage or not.")
@@ -28,7 +28,7 @@ class Projects extends Component {
                         <li>Redux</li>
                         <li>Firebase <i className="fas fa-fire"></i></li>
                     </ul>} invert={false}/>
-                    <ProjectCard projImg={Discord} color="#56a3a6" fontColor="#cad49d" ident="Project-2" title="Aldebaran" 
+                    <ProjectCard projImg={Discord} color="#008073" fontColor="#000f08" ident="Project-2" title="Aldebaran" 
                     description={
                         this.props.language ? 
                         ("A bot application that connects to a Discord server and plays music from YouTube, and defines words like a dictionary.")
@@ -39,7 +39,7 @@ class Projects extends Component {
                         <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 
                         repo="https://github.com/Tronax1/Aldebaran-" invert={true}/>
-                    <ProjectCard projImg={Knight} color="#b9a44c" fontColor="#1b1b1e" ident="Project-3" 
+                    <ProjectCard projImg={Knight} color="#008073" fontColor="#000f08" ident="Project-3" 
                     title={
                         this.props.language ? 
                             ("Knight's Move Game")
@@ -55,7 +55,7 @@ class Projects extends Component {
                         repo="https://github.com/Tronax1/Knights-game" technologies={<ul>
                             <li>C++</li>
                         </ul>} invert={false}/>
-                    <ProjectCard projImg={TicTacToe} color="#85cb33" fontColor="#1b1b1e" ident="Project-4" title="Tic-Tac-Toe" 
+                    <ProjectCard projImg={TicTacToe} color="#008073" fontColor="#000f08" ident="Project-4" title="Tic-Tac-Toe" 
                     description={
                         this.props.language ? 
                             ("A player vs AI Tic-Tac-Toe game.")
@@ -65,7 +65,7 @@ class Projects extends Component {
                         repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul>
                             <li>Java <i className="fab fa-java"></i></li>
                         </ul>} invert={true}/>
-                    <ProjectCard projImg={ProjectImage} color="#e63462" fontColor="#1b1b1e" ident="Project-5" 
+                    <ProjectCard projImg={ProjectImage} color="#008073" fontColor="#000f08" ident="Project-5" 
                     title={
                         this.props.language ? 
                             ("Scientific Calculator")

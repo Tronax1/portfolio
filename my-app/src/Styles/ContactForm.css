@@ -1,12 +1,12 @@
 .Form-background{
     margin-top: 20vh;
-    margin-left: 15vw;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #14213d;
+    background-color: #7392b7;
     height: 75vh;
-    width: 70vw;
+    width: 80vw;
     align-items: center;
     border-radius: 8px;
     box-shadow: 15px 15px #888888;
@@ -40,7 +40,7 @@
     border-style: solid;
     transition-duration: 0.3s;
     font-family: 'Slabo 27px', serif;
-    color: white;
+    color: #2f243a;
 }
 .Form-background .Submit-form:hover{
     background-color: #fca311;
@@ -48,7 +48,7 @@
 }
 
 .Form-background h1{
-    color: white;
+    color: #2f243a;
     font-size: 1.4rem;
 }
 #field-1{
@@ -66,4 +66,10 @@
 #field-4{
     opacity: 0;
     animation: Showup 0.5s ease-in 1s 1 forwards;
+}
+@media only screen and (min-width: 768px){
+    .Form-background{
+        margin-left: 24vw;
+        width: 50vw;
+    }
 }
