@@ -35,7 +35,7 @@ class Projects extends Component {
                         :
                         ("Una aplicación que se conecta a un servidor Discord, reproduce música de YouTube y define palabras como un diccionario.")
                     } technologies={<ul>
-                        <li>Nodejs  <i class="fab fa-node"></i></li>
+                        <li>Nodejs  <i className="fab fa-node"></i></li>
                         <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 
                         repo="https://github.com/Tronax1/Aldebaran-" invert={true}/>
