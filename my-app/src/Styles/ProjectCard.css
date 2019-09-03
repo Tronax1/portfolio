@@ -6,11 +6,19 @@
     display: flex;
     flex-direction: column;
 }
+.Desktop-Only{
+    display: none;
+}
 .Project-Card-Flex{
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-left: 10vw;
+}
+.Project-Content-Flex{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 .Project-Card-Header img{
     width: 100%;
@@ -62,8 +70,11 @@
 }
 @media only screen and (min-width: 768px){
     .Project-Card-Body p{
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+    .Project-Card-Header{
+        width: 70vw;
     }
     .Project-Card-Header img{
         width: 100%;
@@ -72,12 +83,24 @@
     .Project-Card-Body{
         width: 100%;
     }
-    .Project-Card-Flex{
-        width: 40%;
-        margin-left: 28vw;
-    }
     .Project-Card-Footer div{
         text-align: left;
         margin-left: 37%;
+    }
+    .Project-Card-Flex{
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: 15vh;
+        justify-content: space-evenly;
+    }
+    .Project-Card{
+        height: 140vh;
+    }
+    .Mobile-Only{
+        display: none;
+    }
+    .Desktop-Only{
+        display: initial;
     }
 }
