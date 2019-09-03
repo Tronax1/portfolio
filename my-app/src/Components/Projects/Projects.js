@@ -23,7 +23,7 @@ class Projects extends Component {
                                 :
                             ("Una aplicación web que almacena los gastos de un usuario y calcula si un usuario puede pagar una hipoteca.")
                     } 
-                    repo="https://github.com/Tronax1/Money-Manager" technologies={<ul>
+                    repo="https://github.com/Tronax1/Money-Manager" technologies={<ul style={{listStyleType: "none"}}>
                         <li>React <i className="fab fa-react"></i></li>
                         <li>Redux</li>
                         <li>Firebase <i className="fas fa-fire"></i></li>
@@ -34,7 +34,7 @@ class Projects extends Component {
                         ("A bot application that connects to a Discord server and plays music from YouTube, and defines words like a dictionary.")
                         :
                         ("Una aplicación que se conecta a un servidor Discord, reproduce música de YouTube y define palabras como un diccionario.")
-                    } technologies={<ul>
+                        } technologies={<ul style={{ listStyleType: "none" }}>
                         <li>Nodejs  <i className="fab fa-node"></i></li>
                         <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 
@@ -52,7 +52,7 @@ class Projects extends Component {
                             :
                             ("Un juego de jugador vs computadora donde ambos mueven un caballo de ajedrez en un tablero 4x4. El jugador que se quede sin jugadas pierde.")
                     }
-                        repo="https://github.com/Tronax1/Knights-game" technologies={<ul>
+                        repo="https://github.com/Tronax1/Knights-game" technologies={<ul style={{ listStyleType: "none" }}>
                             <li>C++</li>
                         </ul>} invert={false}/>
                     <ProjectCard projImg={TicTacToe} color="#008073" fontColor="#000f08" ident="Project-4" title="Tic-Tac-Toe" 
@@ -62,7 +62,7 @@ class Projects extends Component {
                         :
                             ("Un juego de jugador vs computadora Tic-Tac-Toe.")
                     } 
-                        repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul>
+                        repo="https://github.com/Tronax1/Tic-Tac-Toe" technologies={<ul style={{ listStyleType: "none" }}>
                             <li>Java <i className="fab fa-java"></i></li>
                         </ul>} invert={true}/>
                     <ProjectCard projImg={ProjectImage} color="#008073" fontColor="#000f08" ident="Project-5" 
@@ -78,7 +78,7 @@ class Projects extends Component {
                         :
                             ("Calculadora científica con funciones trigonométricas.")
                     }
-                        repo="https://github.com/Tronax1/Calculator" technologies={<ul>
+                        repo="https://github.com/Tronax1/Calculator" technologies={<ul style={{ listStyleType: "none" }}>
                             <li>C++</li>
                         </ul>} invert={false}/>
                 </div>)       
