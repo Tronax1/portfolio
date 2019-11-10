@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 import Hamburger from './Hamburger'
 import MobileMenu from './MobileMenu'
 import {changeEnglish} from '../../actions'
@@ -29,19 +29,19 @@ class Navbar extends Component {
                     <div className="Nav">
                         <div className="Nav-Flex">
                             <div className="Brand">
-                                <NavLink className="Nav-Elements Home" to="/">JV</NavLink>
+                                <NavLink activeClassName="active-selected" className="Nav-Elements Home" to="/" exact>JV</NavLink>
                             </div>
                             <div className="Nav-Elements-Flex">
-                                <NavLink className="Nav-Elements" id="Desktop-Elements" to="/About">
+                                <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/About">
                                     {this.props.language ? ("About"):("Acerca")}
                                 </NavLink>
-                                <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Resume">
+                                <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Resume">
                                     {this.props.language ? ("Resume"):("Hoja de Vida")}
                                 </NavLink>
-                                <NavLink className="Nav-Elements" id="Desktop-Elements" to="Projects">
+                                <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Projects">
                                     {this.props.language ? ("Projects"):("Proyectos")}
                                 </NavLink>
-                                <NavLink className="Nav-Elements" id="Desktop-Elements" to="/Contact">
+                                <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Contact">
                                     {this.props.language ? ("Contact"):("Contactame")}
                                 </NavLink>
                                 {this.props.language ? 
@@ -61,4 +61,4 @@ class Navbar extends Component {
 function mapStatetoProps({language}){
     return {language};
 }
-export default connect(mapStatetoProps, {changeEnglish, changeSpanish})(Navbar);
+export default withRouter(connect(mapStatetoProps, {changeEnglish, changeSpanish})(Navbar));

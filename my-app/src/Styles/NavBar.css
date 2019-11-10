@@ -72,6 +72,10 @@
 #Mobile-Menu:active{
     background-color: white;
 }
+.active-selected{
+    background-color: black;
+    color: #e5e5e5;
+}
 @media only screen and (min-width: 768px){
     .Nav-Flex{
         justify-content: initial;

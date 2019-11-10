@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 import Home from "./Components//Home/Home"
@@ -14,8 +14,6 @@ import './App.css'
 export default class App extends Component {
   render() {
     return (
-      
-      <BrowserRouter>
         <React.Fragment>
           <NavBar/>
           <Route render={({location})=>(
@@ -36,7 +34,6 @@ export default class App extends Component {
             </TransitionGroup>
           )}/>
         </React.Fragment>
-      </BrowserRouter>
     );
   }
 }
