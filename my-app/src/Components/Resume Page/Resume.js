@@ -4,18 +4,6 @@ import USFlogo from './University of South Florida Logo.png'
 import ResumeSubCard from './ResumeSubCard'
 import CV from './CV Jorge Villarreal.pdf'
 import CVSpa from './CV Jorge Villarreal SPA.pdf'
-import reactLogo from './ReactIcon.png'
-import reduxIcon from './ReduxIcon.png'
-import firebaseIcon from './firebase.png'
-import htmlIcon from './HTML.png'
-import nodeIcon from './node.png'
-import cssIcon from './CSS.png'
-import cppIcon from './Cpp.png'
-import awsIcon from './AWS.png'
-import javaIcon from './java.png'
-import gitIcon from './Git.png'
-import linuxIcon from './Linux.png'
-import jsLogo from './jsLogo.png'
 
 import {connect} from 'react-redux'
 
@@ -65,30 +53,34 @@ class Resume extends Component {
                         <div className="Sub-Cards-Flex">
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <img id="Skill-icons" src={reactLogo} alt="" />
-                                    <img id="Skill-icons" src={reduxIcon} alt="" />
-                                    <img id="Skill-icons" src={firebaseIcon} alt="" />
-                                    <img id="Skill-icons" src={nodeIcon} alt="" />
+                                    <span id="Skill-icons">React</span>
+                                    <span id="Skill-icons">Redux</span>
+                                    <span id="Skill-icons">Firebase</span>
+                                    <span id="Skill-icons">Node.js</span>
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <img id="Skill-icons" src={htmlIcon} alt="" />
-                                    <img id="Skill-icons" src={cssIcon} alt="" />
-                                    <img id="Skill-icons" src={jsLogo} alt="" />
+                                    <span id="Skill-icons">HTML</span>
+                                    <span id="Skill-icons">CSS</span>
+                                    <span id="Skill-icons">JavaScript</span>
+                                    <span id="Skill-icons">Sass</span>
+                                    <span id="Skill-icons">MongoDB</span>
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <img id="Skill-icons" src={cppIcon} alt="" />
-                                    <img id="Skill-icons" src={javaIcon} alt="" />
+                                    <span id="Skill-icons">C++</span>
+                                    <span id="Skill-icons">Java</span>
+                                    <span id="Skill-icons"></span>
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <img id="Skill-icons" src={awsIcon} alt="" />
-                                    <img id="Skill-icons" src={gitIcon} alt="" />
-                                    <img id="Skill-icons" src={linuxIcon} alt="" />
+                                    <span id="Skill-icons">AWS</span>
+                                    <span id="Skill-icons">Git</span>
+                                    <span id="Skill-icons">Linux</span>
+                                    <span id="Skill-icons">RESTful Services</span>
                                 </div>
                             } />
                         </div>

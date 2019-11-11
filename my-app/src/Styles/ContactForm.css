@@ -14,7 +14,7 @@
     animation: Showup 0.5s ease-in 0.4s 1 forwards;
 }
 .Form-background input{
-    width: 40vw;
+    width: 70vw;
     height: 8vh;
     font-size: 1.4rem;
     border-radius: 6px;
@@ -23,7 +23,7 @@
     padding-left: 10px;
 }
 .Form-background textarea{
-    width: 40vw;
+    width: 70vw;
     font-size: 1.4rem;
     height: 17vh;
     border-radius: 6px;
@@ -32,7 +32,7 @@
     padding-left: 10px;
 }
 .Form-background .Submit-form{
-    width: 40vw;
+    width: 70vw;
     height: 8vh;
     font-size: 1.4rem;
     border-radius: 6px;
@@ -68,8 +68,17 @@
     animation: Showup 0.5s ease-in 1s 1 forwards;
 }
 @media only screen and (min-width: 768px){
+    .Form-background input{
+        width: 40vw;
+    }
+    .Form-background textarea{
+        width: 40vw;
+    }
     .Form-background{
         margin-left: 24vw;
         width: 50vw;
+    }
+    .Form-background .Submit-form{
+        width: 40vw;
     }
 }
