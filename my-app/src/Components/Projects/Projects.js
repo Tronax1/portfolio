@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Discord from './Discord.png'
 import ChangeGear from './ChangeGear.png'
 import Money from './moneymanager.jpg'
+import Footer from '../Footer/Footer'
 import '../../Styles/Projects.css'
 
 class Projects extends Component {
@@ -56,6 +57,7 @@ class Projects extends Component {
                         <li>AWS  <i className="fab fa-aws"></i></li>
                     </ul>} 
                         repo="https://github.com/Tronax1/Aldebaran-" invert={false}/>
+                        <Footer/>
                 </div>       
             </div>
         )

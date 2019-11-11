@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SampleImage from './pangolin6.jpg'
 import {connect} from 'react-redux'
+import Footer from '../Footer/Footer'
 
 import '../../Styles/About.css'
 
@@ -26,6 +27,7 @@ class About extends Component {
                         }
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

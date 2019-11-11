@@ -4,6 +4,7 @@ import USFlogo from './University of South Florida Logo.png'
 import ResumeSubCard from './ResumeSubCard'
 import CV from './CV Jorge Villarreal.pdf'
 import CVSpa from './CV Jorge Villarreal SPA.pdf'
+import Footer from '../Footer/Footer'
 
 import {connect} from 'react-redux'
 
@@ -129,7 +130,9 @@ class Resume extends Component {
                             </div>
                         } />
                     } />
-                </div>    
+                    <Footer />
+                </div>
+                    
             </div>
         )
     }

@@ -1,0 +1,14 @@
+.Copyright-footer{
+    height: 8vh;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+    box-shadow: 5px 10px 30px #000000;
+}
+@media only screen and (min-width: 768px){
+    .Copyright-footer{
+        height: 4vh;
+        padding-top: 2vh;
+    }
+}

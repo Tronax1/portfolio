@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux';
-
 import '../../Styles/Home.css'
 
 class Home extends Component {

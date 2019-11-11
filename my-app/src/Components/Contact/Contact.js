@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Footer from '../Footer/Footer'
+
 import ContactForm from './ContactForm'
 
 export default class Contact extends Component {
@@ -9,6 +11,7 @@ export default class Contact extends Component {
         return (
             <div className="page">
                 <ContactForm/>
+                <Footer/>
             </div>
         )
     }
