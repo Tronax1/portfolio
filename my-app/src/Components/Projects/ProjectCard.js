@@ -66,8 +66,8 @@ class ProjectCard extends Component {
                                 {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                 <div>{this.props.technologies}</div>
                                 {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
-                                >View Source</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
-                                >Ver Código</a>)}
+                                >View Project</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                                >Ver Proyecto</a>)}
                             </div>
                         </div>
                     </div>
