@@ -41,7 +41,7 @@ class Projects extends Component {
                                 :
                             ("Una aplicación web que almacena los gastos de un usuario y calcula si un usuario puede pagar una hipoteca.")
                     } 
-                        repo="http://changegear-ticket-system.herokuapp.com" technologies={<ul style={{listStyleType: "none"}}>
+                        repo="https://managerfolio.herokuapp.com" technologies={<ul style={{listStyleType: "none"}}>
                         <li>React <i className="fab fa-react"></i></li>
                         <li>Redux</li>
                         <li>Firebase <i className="fas fa-fire"></i></li>
