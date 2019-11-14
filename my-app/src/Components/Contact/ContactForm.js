@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+import { sendEmail } from '../../actions'
 import {connect} from 'react-redux'
 
 import '../../Styles/ContactForm.css'
@@ -20,19 +20,16 @@ class ContactForm extends Component {
             [e.target.name]: e.target.value
         });
     }
-    async handleSubmit(e){
+    handleSubmit(e){
         e.preventDefault();
-        const {email, subject, message} = this.state;
+        const contactDetails = this.state;
+        this.props.sendEmail(contactDetails);
         this.setState({
             email: '',
             subject: '',
             message: '',
         })
-        await axios.post('/api/form', {
-            email,
-            subject,
-            message
-        });
+
     }
     render() {
         return (
@@ -54,4 +51,4 @@ class ContactForm extends Component {
 function mapStatetoProps({language}){
     return {language};
 }
-export default connect(mapStatetoProps)(ContactForm);
+export default connect(mapStatetoProps, {sendEmail})(ContactForm);
