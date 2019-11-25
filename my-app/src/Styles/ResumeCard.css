@@ -1,14 +1,14 @@
 .Card-b{
     width: 100%;
-    background-color: rgb(218, 213, 213);
     font-family: 'Slabo 27px', serif;
 }
 .Card-header{
     text-align: start;
     color: white;
-    background-color: #008073;
+    background-color: #004C45;
     font-size: 1.5rem;
     height: 90px;
+    box-shadow: 5px 10px 30px #888888;
 }
 .Card-header h1{
     margin-left: 3vw;

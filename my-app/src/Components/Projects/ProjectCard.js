@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     render() {
         return (
             <div>
-                <div id={this.props.ident} className="Project-Card" style={{ backgroundImage: `radial-gradient(circle, ${this.props.color} 5%, rgb(218, 213, 213))`}}>
+                <div id={this.props.ident} className="Project-Card">
                     <div className="Project-Card-Flex">
                         {!this.props.invert ?
                             (<React.Fragment>
@@ -52,7 +52,7 @@ class ProjectCard extends Component {
                         }
                         </div>
                     </div>
-                <div id={this.props.ident} className="Project-Card-Mobile" style={{ backgroundImage: `radial-gradient(circle, ${this.props.color} 5%, rgb(218, 213, 213))` }}>
+                <div id={this.props.ident} className="Project-Card-Mobile" >
                     <div className="Project-Card-Flex">
                         <div className="Project-Card-Header">
                             <img src={this.props.projImg} alt=""></img>

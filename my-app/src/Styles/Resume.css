@@ -13,7 +13,7 @@
     margin-top: 6.8vh;
     width: 100vw;
     left: 0;
-    background-color: rgb(218, 213, 213);
+    
 }
 .Skills-flex{
   padding-left: 10%;
@@ -49,7 +49,7 @@ body{
   margin-left: 20%;
 }
 #Skill-icons{
-  text-shadow: 0 0 3px #FF0000, 0 0 5px#000808;
+  text-shadow: 0 0 3px #000808;
   width: 20vw;
   height: 15vh;
   transition: all .4s ease-in-out;
@@ -74,23 +74,22 @@ body{
   width: 70%;
   height: 8vh;
   text-decoration: none;
-  background-color: darkblue;
+  background-color: #e0ca3c;
   text-align: center;
   font-size: 2rem;
   margin-top: 10vh;
-  color: white;
+  color: black;
   font-family: 'Slabo 27px', serif;
   border-radius: 7px;
   transition: all .4s ease-in-out;
-  box-shadow: 5px 5px #888888;
   margin-left: 8vw;
   margin-bottom: 10px;
   opacity: 0;
   animation: Showup 0.5s ease-in 0.4s 1 forwards;
 }
 .Resume-card-flex a:hover{
-  background-color: red; 
-  transform: scale(1.2);
+  background-color: #fbfffe; 
+  box-shadow: 5px 10px 8px #888888;
 }
 @media only screen and (min-width: 768px){
   .Resume-card-flex{
