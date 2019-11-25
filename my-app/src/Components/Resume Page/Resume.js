@@ -54,34 +54,48 @@ class Resume extends Component {
                         <div className="Sub-Cards-Flex">
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
+                                    <span id="Skill-icons">Front End:</span>
                                     <span id="Skill-icons">React</span>
                                     <span id="Skill-icons">Redux</span>
-                                    <span id="Skill-icons">Firebase</span>
-                                    <span id="Skill-icons">Node.js</span>
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
+                                    <span id="Skill-icons">Back End:</span>
+                                    <span id="Skill-icons">Nodejs</span>
+                                    <span id="Skill-icons">Express</span>
+                                </div>
+                            } />
+                            <ResumeSubCard information={
+                                <div className="Skills-flex">
+                            <span id="Skill-icons">{this.props.language ? ("Languages:"):("Lenguajes:")}</span>
+                                    <span id="Skill-icons">JavaScript</span>
+                                    <span id="Skill-icons">C/C++</span>
+                                    <span id="Skill-icons">Java</span>
+                                </div>
+                            } />
+                            <ResumeSubCard information={
+                                <div className="Skills-flex">
+                                    <span id="Skill-icons">Web:</span>
                                     <span id="Skill-icons">HTML</span>
                                     <span id="Skill-icons">CSS</span>
-                                    <span id="Skill-icons">JavaScript</span>
-                                    <span id="Skill-icons">Sass</span>
+                                    <span id="Skill-icons">SASS</span>
+                                    <span id="Skill-icons">Firebase</span>
+                                    <span id="Skill-icons">REST API</span>
+                                </div>
+                            } />
+                            <ResumeSubCard information={
+                                <div className="Skills-flex">
+                                    <span id="Skill-icons">{this.props.language ? ("Databases:") : ("Base de datos:")}</span>
                                     <span id="Skill-icons">MongoDB</span>
+                                    <span id="Skill-icons">NoSQL</span>
                                 </div>
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <span id="Skill-icons">C++</span>
-                                    <span id="Skill-icons">Java</span>
-                                    <span id="Skill-icons"></span>
-                                </div>
-                            } />
-                            <ResumeSubCard information={
-                                <div className="Skills-flex">
+                                    <span id="Skill-icons">DevOps:</span>
                                     <span id="Skill-icons">AWS</span>
                                     <span id="Skill-icons">Git</span>
-                                    <span id="Skill-icons">Linux</span>
-                                    <span id="Skill-icons">RESTful Services</span>
                                 </div>
                             } />
                         </div>
