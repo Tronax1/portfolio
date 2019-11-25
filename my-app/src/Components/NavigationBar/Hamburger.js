@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../Styles/Hamburger.css'
+import '../../Styles/Hamburger.scss'
 
 export default function Hamburger(props) {
     if (!props.showX){

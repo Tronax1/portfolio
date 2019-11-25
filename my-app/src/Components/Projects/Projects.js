@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 import {connect} from 'react-redux'
 import Footer from '../Footer/Footer'
 import ProjectInfo from './ProjectInfo'
-import '../../Styles/Projects.css'
+import '../../Styles/Projects.scss'
 
 class Projects extends Component {
     componentWillUnmount(){

@@ -9,7 +9,7 @@ import Projects from "./Components/Projects/Projects"
 import NavBar from "./Components/NavigationBar/Navbar"
 import Resume from "./Components/Resume Page/Resume"
 
-import './App.css'
+import './App.scss'
 
 export default class App extends Component {
   render() {

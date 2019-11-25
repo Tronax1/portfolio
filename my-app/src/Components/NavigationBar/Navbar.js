@@ -6,7 +6,7 @@ import {changeEnglish} from '../../actions'
 import {changeSpanish} from '../../actions'
 import {connect} from 'react-redux'
 
-import '../../Styles/NavBar.css'
+import '../../Styles/NavBar.scss'
 
 class Navbar extends Component {
     constructor(props){

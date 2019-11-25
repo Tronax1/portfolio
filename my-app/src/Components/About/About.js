@@ -3,7 +3,7 @@ import SampleImage from './pangolin6.jpg'
 import {connect} from 'react-redux'
 import Footer from '../Footer/Footer'
 
-import '../../Styles/About.css'
+import '../../Styles/About.scss'
 
 class About extends Component {
     componentWillUnmount(){

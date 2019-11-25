@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../../Styles/Delay.css'
+import '../../Styles/Delay.scss'
 
 export default class Delay extends Component {
   render() {

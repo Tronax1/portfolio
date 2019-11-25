@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer'
 
 import {connect} from 'react-redux'
 
-import '../../Styles/Resume.css'
+import '../../Styles/Resume.scss'
 
 class Resume extends Component {
     componentWillUnmount(){

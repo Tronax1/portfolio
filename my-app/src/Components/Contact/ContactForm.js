@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { sendEmail } from '../../actions'
 import {connect} from 'react-redux'
 
-import '../../Styles/ContactForm.css'
+import '../../Styles/ContactForm.scss'
 
 class ContactForm extends Component {
     constructor(props){

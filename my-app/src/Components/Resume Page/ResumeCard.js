@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../../Styles/ResumeCard.css'
+import '../../Styles/ResumeCard.scss'
 
 export default class ResumeCard extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
-import '../../Styles/ProjectCard.css'
+import '../../Styles/ProjectCard.scss'
 
 class ProjectCard extends Component {
     render() {
