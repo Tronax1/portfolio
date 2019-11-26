@@ -76,6 +76,10 @@
     &:active{
         background-color: white;
     }
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 .active-selected{
     background-color: black;
