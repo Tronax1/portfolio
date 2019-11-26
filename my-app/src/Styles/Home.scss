@@ -51,12 +51,12 @@
     margin-left: 20vw;
     margin-right: 20vw;
     text-align: center;
-}
-.Project-Redirect:hover{
-    background-color: white;
-    color: black;
-    transform: scale(1.2);
-    
+
+    &:hover{
+        background-color: white;
+        color: black;
+        transform: scale(1.2);
+    }
 }
 .Link-refs{
     margin-top: 10vh;
@@ -67,9 +67,10 @@
 }
 .Link-icons{
     transition: all .2s ease-in-out;
-}
-.Link-icons:hover{
-    transform: scale(1.4);
+
+    &:hover{
+        transform: scale(1.4);
+    }
 }
 #Initial-animation{
     opacity: 0;

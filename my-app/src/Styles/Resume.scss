@@ -14,6 +14,28 @@
     width: 100vw;
     left: 0;
     
+    a{
+      width: 70%;
+      height: 8vh;
+      text-decoration: none;
+      background-color: #e0ca3c;
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 10vh;
+      color: black;
+      font-family: 'Slabo 27px', serif;
+      border-radius: 7px;
+      transition: all .4s ease-in-out;
+      margin-left: 8vw;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: Showup 0.5s ease-in 0.4s 1 forwards;
+
+      &:hover{
+        background-color: #fbfffe; 
+        box-shadow: 5px 10px 8px #888888;
+      }
+    }
 }
 .Skills-flex{
   padding-left: 10%;
@@ -53,10 +75,11 @@ body{
   width: 20vw;
   height: 15vh;
   transition: all .4s ease-in-out;
-}
-#Skill-icons:hover{
-  cursor: default;
-  transform: scale(1.2);
+
+  &:hover{
+    cursor: default;
+    transform: scale(1.2);
+  }
 }
 #p-1{
   opacity: 0;
@@ -70,35 +93,15 @@ body{
   opacity: 0;
   animation: Showup 0.5s ease-in 0.8s 1 forwards;
 }
-.Resume-card-flex a{
-  width: 70%;
-  height: 8vh;
-  text-decoration: none;
-  background-color: #e0ca3c;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 10vh;
-  color: black;
-  font-family: 'Slabo 27px', serif;
-  border-radius: 7px;
-  transition: all .4s ease-in-out;
-  margin-left: 8vw;
-  margin-bottom: 10px;
-  opacity: 0;
-  animation: Showup 0.5s ease-in 0.4s 1 forwards;
-}
-.Resume-card-flex a:hover{
-  background-color: #fbfffe; 
-  box-shadow: 5px 10px 8px #888888;
-}
 @media only screen and (min-width: 768px){
   .Resume-card-flex{
       width: 98.8vw;
-  }
-  .Resume-card-flex a{
-    width: 20vw;
-    margin-left: 38vw;
-    margin-top: 10vh;
+
+      a{
+        width: 20vw;
+        margin-left: 38vw;
+        margin-top: 10vh;
+      }
   }
   #USF{
     width: 15vw;

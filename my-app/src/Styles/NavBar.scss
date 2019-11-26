@@ -34,15 +34,17 @@
     font-size: 1.5rem;
     font-family: "Roboto Slab";
     border-radius: 15px;
-}
-.Nav-Elements:hover{
-    transition-duration: 0.3s;
-    transition-delay: 0.05s;
-    background-color: black;
-    color: #e5e5e5;
-}
-.Nav-Elements:target{
-    text-decoration: underline;
+
+    &:hover{
+        transition-duration: 0.3s;
+        transition-delay: 0.05s;
+        background-color: black;
+        color: #e5e5e5;
+    }
+
+    &:target{
+        text-decoration: underline;
+    }
 }
 .Brand{
     display: flex;
@@ -58,10 +60,11 @@
     margin-top: 14px;
     height: 80%;
     transition: all .4s ease-in-out;
-}
-#Language-button:hover{
-    text-decoration: underline;
-    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 #Desktop-Elements{
     display: none;
@@ -69,9 +72,10 @@
 #Mobile-Menu{
     background-color: transparent;
     border-style: none;
-}
-#Mobile-Menu:active{
-    background-color: white;
+
+    &:active{
+        background-color: white;
+    }
 }
 .active-selected{
     background-color: black;

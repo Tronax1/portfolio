@@ -21,27 +21,31 @@
     opacity: 0;
     animation: Showup 0.5s ease-in 0.4s 1 forwards;
     margin-bottom: 5vh;
-}
 
-.About-Content  h1{
-    font-size: 3rem;
-}
-.About-Content  p{
-    font-size: 2rem;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-.About-Content img{
-    width: 90vw;
-    height: 50vh;
-    margin-left: 2vw;
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
+    h1{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 2rem;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    img{
+        width: 90vw;
+        height: 50vh;
+        margin-left: 2vw;
+        border-radius: 50%;
+        animation: float 6s ease-in-out infinite;
+    }
 }
 @media only screen and (min-width: 768px){
-    .About-Content img{
-        width: 100%;
-        height: 60vh;
+    .About-Content{
+        img{
+            width: 100%;
+            height: 60vh;
+        }
+        
     }
     .Content-Flex{
         display: flex;

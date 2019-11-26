@@ -23,10 +23,11 @@
     padding-left: 5vw;
     padding-right: 5vw;
     font-size: 1.5rem;
-}
-.Nav-Elements-Mobile:hover{
-    color: black;
-    background-color: white;
+
+    &:hover{
+        color: black;
+        background-color: white;
+    }
 }
 .active-selected{
     background-color: black;

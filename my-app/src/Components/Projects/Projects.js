@@ -15,7 +15,7 @@ class Projects extends Component {
             <div className="page">
                 <div className="Projects-flex">
                     {ProjectInfo.map((item, i)=>(
-                        <ProjectCard key={i} projImg={item.imag} color={item.color} fontColor={item.fontColor} ident={item.ident}
+                        <ProjectCard key={i} projImg={item.imag} ident={item.ident}
                             title={
                                 this.props.language ?
                                     (item.title[0])

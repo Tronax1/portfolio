@@ -24,8 +24,6 @@ const discordTechnologies = <ul style={{ listStyleType: "none" }}>
 const Projects = [
     {
         imag: ChangeGear,
-        color: '#008073',
-        fontColor: '#000f08',
         ident: 'Project-1',
         title: ['Senior Project', 'Proyecto de Grado'],
         description: ['A full stack web utility that helps a user compare various report tickets using a likert scale.', 
@@ -36,8 +34,6 @@ const Projects = [
     },
     {
         imag: Money,
-        color: '#008073',
-        fontColor: '#000f08',
         ident: 'Project-2',
         title: ['Money Manager', 'Money Manager'],
         description: ['A finance web application that tracks user expenses and calculates whether the user can afford a mortgage or not.',
@@ -48,8 +44,6 @@ const Projects = [
     },
     {
         imag: Discord,
-        color: '#008073',
-        fontColor: '#000f08',
         ident: 'Project-3',
         title: ['Aldebaran', 'Aldebaran'],
         description: ['A bot application that connects to a Discord server and plays music from YouTube, and defines words like a dictionary.',

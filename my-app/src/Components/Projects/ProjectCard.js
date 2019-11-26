@@ -15,11 +15,11 @@ class ProjectCard extends Component {
                                     <img src={this.props.projImg} alt=""></img>
                                 </div>
                                 <div className="Project-Content-Flex">
-                                    <div className="Project-Card-Body" style={{ color: this.props.fontColor }}>
+                                    <div className="Project-Card-Body">
                                         <h1>{this.props.title}</h1>
                                         <p>{this.props.description}</p>
                                     </div>
-                                    <div className="Project-Card-Footer" style={{ color: this.props.fontColor }}>
+                                    <div className="Project-Card-Footer">
                                         {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                         <div>{this.props.technologies}</div>
                                         {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
@@ -32,11 +32,11 @@ class ProjectCard extends Component {
                             (
                                 <React.Fragment>
                                     <div className="Project-Content-Flex">
-                                        <div className="Project-Card-Body" style={{ color: this.props.fontColor }}>
+                                        <div className="Project-Card-Body">
                                             <h1>{this.props.title}</h1>
                                             <p>{this.props.description}</p>
                                         </div>
-                                        <div className="Project-Card-Footer" style={{ color: this.props.fontColor }}>
+                                        <div className="Project-Card-Footer">
                                             {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                             <div>{this.props.technologies}</div>
                                             {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
@@ -58,11 +58,11 @@ class ProjectCard extends Component {
                             <img src={this.props.projImg} alt=""></img>
                         </div>
                         <div className="Project-Content-Flex">
-                            <div className="Project-Card-Body" style={{ color: this.props.fontColor }}>
+                            <div className="Project-Card-Body">
                                 <h1>{this.props.title}</h1>
                                 <p>{this.props.description}</p>
                             </div>
-                            <div className="Project-Card-Footer" style={{ color: this.props.fontColor }}>
+                            <div className="Project-Card-Footer">
                                 {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                 <div>{this.props.technologies}</div>
                                 {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"

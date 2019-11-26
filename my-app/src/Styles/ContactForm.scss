@@ -13,45 +13,48 @@
     opacity: 0;
     animation: Showup 0.5s ease-in 0.4s 1 forwards;
     margin-bottom: 10vh;
-}
-.Form-background input{
-    width: 70vw;
-    height: 8vh;
-    font-size: 1.4rem;
-    border-radius: 6px;
-    border-style: none;
-    font-family: 'Slabo 27px', serif;
-    padding-left: 10px;
-}
-.Form-background textarea{
-    width: 70vw;
-    font-size: 1.4rem;
-    height: 17vh;
-    border-radius: 6px;
-    border-style: none;
-    font-family: 'Slabo 27px', serif;
-    padding-left: 10px;
-}
-.Form-background .Submit-form{
-    width: 70vw;
-    height: 8vh;
-    font-size: 1.4rem;
-    border-radius: 6px;
-    background-color: transparent;
-    border-style: solid;
-    transition-duration: 0.3s;
-    font-family: 'Slabo 27px', serif;
-    color: #2f243a;
-}
-.Form-background .Submit-form:hover{
-    background-color: #fca311;
-    color: black;
-    cursor: pointer;
-}
 
-.Form-background h1{
-    color: #2f243a;
-    font-size: 1.8rem;
+    h1{
+        color: #2f243a;
+        font-size: 1.8rem;
+    }
+
+    input{
+        width: 70vw;
+        height: 8vh;
+        font-size: 1.4rem;
+        border-radius: 6px;
+        border-style: none;
+        font-family: 'Slabo 27px', serif;
+        padding-left: 10px;
+    }
+
+    textarea{
+        width: 70vw;
+        font-size: 1.4rem;
+        height: 17vh;
+        border-radius: 6px;
+        border-style: none;
+        font-family: 'Slabo 27px', serif;
+        padding-left: 10px;
+    }
+    .Submit-form{
+        width: 70vw;
+        height: 8vh;
+        font-size: 1.4rem;
+        border-radius: 6px;
+        background-color: transparent;
+        border-style: solid;
+        transition-duration: 0.3s;
+        font-family: 'Slabo 27px', serif;
+        color: #2f243a;
+        
+        &:hover{
+            background-color: #fca311;
+            color: black;
+            cursor: pointer;
+        }
+    }
 }
 #field-1{
     opacity: 0;
@@ -70,17 +73,20 @@
     animation: Showup 0.5s ease-in 1s 1 forwards;
 }
 @media only screen and (min-width: 768px){
-    .Form-background input{
-        width: 40vw;
-    }
-    .Form-background textarea{
-        width: 40vw;
-    }
     .Form-background{
         margin-left: 24vw;
         width: 50vw;
-    }
-    .Form-background .Submit-form{
-        width: 40vw;
+
+        input{
+            width: 40vw;
+        }
+
+        textarea{
+            width: 40vw;
+        }
+        
+        .Submit-form{
+            width: 40vw;
+        }
     }
 }
