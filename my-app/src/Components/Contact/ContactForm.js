@@ -41,7 +41,7 @@ class ContactForm extends Component {
                     <input type="text" placeholder={this.props.language ? ("Subject"):("Sujeto")} name="subject" id="field-2"
                         maxLength="50" onChange={this.handleChange} value={this.state.subject} required />
                     <textarea rows="10" cols="30" placeholder={this.props.language ? ("Message"):("Mensaje")} name="message" id="field-3"
-                        maxLength="250" onChange={this.handleChange} value={this.state.message} required></textarea>
+                        maxLength="250" onChange={this.handleChange} value={this.state.message} required/>
                     <input type="submit" id="field-4" className="Submit-form" value={this.props.language ? ("Submit"):("Enviar")} />
                 </form>
             </div>
