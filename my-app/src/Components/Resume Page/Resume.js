@@ -20,9 +20,9 @@ class Resume extends Component {
                 <div className="Resume-card-flex">
                     {
                         this.props.language ? 
-                            (<a href={CV} download="CV Jorge Villarreal.pdf">Download PDF</a>)
+                            (<a href={CV} download="CV Jorge Villarreal.pdf">Download Resume</a>)
                             : 
-                            (<a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar PDF</a>)
+                            (<a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar Hoja de Vida</a>)
                     }
                     <ResumeCard header={
                         this.props.language ? ("Education"):("Educación")

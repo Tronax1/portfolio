@@ -15,7 +15,7 @@
     left: 0;
     
     a{
-      width: 70%;
+      width: 90%;
       height: 8vh;
       text-decoration: none;
       background-color: #e0ca3c;
@@ -26,7 +26,7 @@
       font-family: 'Slabo 27px', serif;
       border-radius: 7px;
       transition: all .4s ease-in-out;
-      margin-left: 8vw;
+      margin-left: 6vw;
       margin-bottom: 10px;
       opacity: 0;
       animation: Showup 0.5s ease-in 0.4s 1 forwards;
@@ -98,8 +98,8 @@ body{
       width: 98.8vw;
 
       a{
-        width: 20vw;
-        margin-left: 38vw;
+        width: 30vw;
+        margin-left: 34vw;
         margin-top: 10vh;
       }
   }
