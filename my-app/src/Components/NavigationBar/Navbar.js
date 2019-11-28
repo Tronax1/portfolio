@@ -26,7 +26,7 @@ class Navbar extends Component {
     render() {
             return (
                 <React.Fragment>
-                    <div className="Nav">
+                    <nav className="Nav">
                         <div className="Nav-Flex">
                             <div className="Brand">
                                 <NavLink activeClassName="active-selected" className="Nav-Elements Home" to="/" exact>JV</NavLink>
@@ -52,7 +52,7 @@ class Navbar extends Component {
                                 <button id="Mobile-Menu" onClick={this.showMenu}><Hamburger showX={this.state.show} /></button>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                     <MobileMenu onClose={this.showMenu} show={this.state.show} />
                 </React.Fragment>
             )
