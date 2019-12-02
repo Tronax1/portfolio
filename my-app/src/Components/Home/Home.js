@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux';
 import '../../Styles/Home.scss'
 
-function Home(props){
+const Home = props => {
     useEffect(() => window.scrollTo(0, 0));
         return (
             <div className="Home-b">

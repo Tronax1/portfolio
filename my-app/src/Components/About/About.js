@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 
 import '../../Styles/About.scss'
 
-function About(props){
+const About = props => {
     useEffect(() => window.scrollTo(0, 0));
         return (
             <div className="page">

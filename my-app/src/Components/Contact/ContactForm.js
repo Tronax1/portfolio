@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 
 import '../../Styles/ContactForm.scss'
 
-function ContactForm(props){
+const ContactForm = props => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');

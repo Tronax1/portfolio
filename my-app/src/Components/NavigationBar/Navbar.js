@@ -9,7 +9,7 @@ import {connect} from 'react-redux'
 
 import '../../Styles/NavBar.scss'
 
-function Navbar(props){
+const Navbar = props => {
     const [show, setShow] = useState(false);
     const showMenu = () => {
         setShow(!show);

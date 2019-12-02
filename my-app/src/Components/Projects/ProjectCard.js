@@ -1,29 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {connect} from 'react-redux'
 
 import '../../Styles/ProjectCard.scss'
 
-class ProjectCard extends Component {
-    render() {
+const ProjectCard = props => {
         return (
             <div>
-                <div id={this.props.ident} className="Project-Card">
+                <div id={props.ident} className="Project-Card">
                     <div className="Project-Card-Flex">
-                        {!this.props.invert ?
+                        {!props.invert ?
                             (<React.Fragment>
                                 <div className="Project-Card-Header">
-                                    <img src={this.props.projImg} alt=""></img>
+                                    <img src={props.projImg} alt=""></img>
                                 </div>
                                 <div className="Project-Content-Flex">
                                     <div className="Project-Card-Body">
-                                        <h1>{this.props.title}</h1>
-                                        <p>{this.props.description}</p>
+                                        <h1>{props.title}</h1>
+                                        <p>{props.description}</p>
                                     </div>
                                     <div className="Project-Card-Footer">
-                                        {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
-                                        <div>{this.props.technologies}</div>
-                                        {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
-                                        >View Project</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                                        {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                        <div>{props.technologies}</div>
+                                        {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                        >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                         >Ver Proyecto</a>)}
                                     </div>
                                 </div>
@@ -33,40 +32,40 @@ class ProjectCard extends Component {
                                 <React.Fragment>
                                     <div className="Project-Content-Flex">
                                         <div className="Project-Card-Body">
-                                            <h1>{this.props.title}</h1>
-                                            <p>{this.props.description}</p>
+                                            <h1>{props.title}</h1>
+                                            <p>{props.description}</p>
                                         </div>
                                         <div className="Project-Card-Footer">
-                                            {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
-                                            <div>{this.props.technologies}</div>
-                                            {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
-                                            >View Project</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                                            {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                            <div>{props.technologies}</div>
+                                            {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                            >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                             >Ver Proyecto</a>)}
                                         </div>
                                     </div>
                                     <div className="Project-Card-Header">
-                                        <img src={this.props.projImg} alt=""></img>
+                                        <img src={props.projImg} alt=""></img>
                                     </div>
                                 </React.Fragment>
                             )
                         }
                         </div>
                     </div>
-                <div id={this.props.ident} className="Project-Card-Mobile" >
+                <div id={props.ident} className="Project-Card-Mobile" >
                     <div className="Project-Card-Flex">
                         <div className="Project-Card-Header">
-                            <img src={this.props.projImg} alt=""></img>
+                            <img src={props.projImg} alt=""></img>
                         </div>
                         <div className="Project-Content-Flex">
                             <div className="Project-Card-Body">
-                                <h1>{this.props.title}</h1>
-                                <p>{this.props.description}</p>
+                                <h1>{props.title}</h1>
+                                <p>{props.description}</p>
                             </div>
                             <div className="Project-Card-Footer">
-                                {this.props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
-                                <div>{this.props.technologies}</div>
-                                {this.props.language ? (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
-                                >View Project</a>) : (<a href={this.props.repo} target="_blank" rel="noopener noreferrer"
+                                {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                <div>{props.technologies}</div>
+                                {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                 >Ver Proyecto</a>)}
                             </div>
                         </div>
@@ -74,7 +73,6 @@ class ProjectCard extends Component {
                 </div>
             </div>
         )
-    }
 }
 function mapStatetoProps({language}){
     return {language};
