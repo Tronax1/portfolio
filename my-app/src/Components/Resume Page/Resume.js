@@ -12,7 +12,7 @@ import {connect} from 'react-redux'
 import '../../Styles/Resume.scss'
 
 const Resume = props => {
-    useEffect(() => window.scrollTo(0, 0));
+    useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
                 <div className="Resume-card-flex">

@@ -7,7 +7,7 @@ import ProjectInfo from './ProjectInfo'
 import '../../Styles/Projects.scss'
 
 const Projects = props => {
-    useEffect(() => window.scrollTo(0, 0));
+    useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
                 <div className="Projects-flex">

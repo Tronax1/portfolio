@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import '../../Styles/Home.scss'
 
 const Home = props => {
-    useEffect(() => window.scrollTo(0, 0));
+    useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="Home-b">
                     <div className="Home-flex">
