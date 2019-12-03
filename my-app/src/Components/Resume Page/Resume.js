@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useEffect } from 'react'
 import ResumeCard from './ResumeCard'
 import USFlogo from './University of South Florida Logo.png'
 import ResumeSubCard from './ResumeSubCard'
@@ -10,27 +11,24 @@ import {connect} from 'react-redux'
 
 import '../../Styles/Resume.scss'
 
-class Resume extends Component {
-    componentWillUnmount(){
-        window.scrollTo(0,0);
-    }
-    render() {
+const Resume = props => {
+    useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
                 <div className="Resume-card-flex">
                     {
-                        this.props.language ? 
+                        props.language ? 
                             (<a href={CV} download="CV Jorge Villarreal.pdf">Download Resume</a>)
                             : 
                             (<a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar Hoja de Vida</a>)
                     }
                     <ResumeCard header={
-                        this.props.language ? ("Education"):("Educación")
+                        props.language ? ("Education"):("Educación")
                     } ident="p-1" content={
                         <ResumeSubCard information={
                             <div className="Education-Margin">
                                 {
-                                    this.props.language ?
+                                    props.language ?
                                         (
                                             <p><strong>University of South Florida </strong>
                                             Expected December 2019<br />
@@ -49,7 +47,7 @@ class Resume extends Component {
                         } />
                     } />
                     <ResumeCard header={
-                        this.props.language ? ("Skills"):("Habilidades")
+                        props.language ? ("Skills"):("Habilidades")
                     } ident="p-2" content={
                         <div className="Sub-Cards-Flex">
                             <ResumeSubCard information={
@@ -68,7 +66,7 @@ class Resume extends Component {
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                            <span id="Skill-icons">{this.props.language ? ("Languages:"):("Lenguajes:")}</span>
+                            <span id="Skill-icons">{props.language ? ("Languages:"):("Lenguajes:")}</span>
                                     <span id="Skill-icons">JavaScript</span>
                                     <span id="Skill-icons">C/C++</span>
                                     <span id="Skill-icons">Java</span>
@@ -86,7 +84,7 @@ class Resume extends Component {
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <span id="Skill-icons">{this.props.language ? ("Databases:") : ("Base de datos:")}</span>
+                                    <span id="Skill-icons">{props.language ? ("Databases:") : ("Base de datos:")}</span>
                                     <span id="Skill-icons">MongoDB</span>
                                     <span id="Skill-icons">NoSQL</span>
                                 </div>
@@ -101,12 +99,12 @@ class Resume extends Component {
                         </div>
                     } />
                     <ResumeCard header={
-                        this.props.language ? ("Experience"):("Experiencia")
+                        props.language ? ("Experience"):("Experiencia")
                     } ident="p-3" content={
                         <ResumeSubCard information={
                             <div className="Experience-Margin">
                                 {
-                                    this.props.language ? 
+                                    props.language ? 
                                         (
                                             <p><strong>Programming Tutor </strong><br />05/2017 to 08/2017<br /> Colegio Albania–Mushaisa,
                                             La Guajira <ul>
@@ -149,7 +147,6 @@ class Resume extends Component {
                     
             </div>
         )
-    }
 }
 function mapStatetoProps({language}){
     return {language};

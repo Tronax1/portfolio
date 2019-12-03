@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import '../../Styles/ResumeCard.scss'
 
-export default class ResumeCard extends Component {
-    render() {
+export default function ResumeCard(props){
         return (
-                <div id={this.props.ident} className="Card-b">
+                <div id={props.ident} className="Card-b">
                     <div className="Card-header">
-                        <h1>{this.props.header}</h1>
+                        <h1>{props.header}</h1>
                     </div>
                     <div className="Card-body">
-                           {this.props.content}
+                           {props.content}
                     </div>
                 </div>
         )
-    }
 }

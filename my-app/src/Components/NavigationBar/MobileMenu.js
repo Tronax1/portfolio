@@ -1,28 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {NavLink, withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import '../../Styles/MobileMenu.scss'
 
-class MobileMenu extends Component {
-    render() {
-        if(!this.props.show){
-            return null;
-        }
+const MobileMenu = props => {
+    if (!props.show) {
+        return null;
+    }
+    else{
         return (
             <div className="Nav-Mobile">
                 <div className="Nav-Flex-Mobile">
-                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/About" onClick={this.props.onClose}>
-                        {this.props.language ? ("About"):("Acerca")}
+                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/About" onClick={props.onClose}>
+                        {props.language ? ("About"):("Acerca")}
                     </NavLink>
-                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Resume" onClick={this.props.onClose}>
-                        {this.props.language ? ("Resume"):("Hoja de Vida")}
+                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Resume" onClick={props.onClose}>
+                        {props.language ? ("Resume"):("Hoja de Vida")}
                     </NavLink>
-                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Projects" onClick={this.props.onClose}>
-                        {this.props.language ? ("Projects"):("Proyectos")}
+                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Projects" onClick={props.onClose}>
+                        {props.language ? ("Projects"):("Proyectos")}
                     </NavLink>
-                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Contact" onClick={this.props.onClose}>
-                        {this.props.language ? ("Contact"):("Contactame")}
+                    <NavLink activeClassName="active-selected" className="Nav-Elements-Mobile" to="/Contact" onClick={props.onClose}>
+                        {props.language ? ("Contact"):("Contactame")}
                     </NavLink>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch} from "react-router-dom";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 
@@ -11,8 +11,7 @@ import Resume from "./Components/Resume Page/Resume"
 
 import './App.scss'
 
-export default class App extends Component {
-  render() {
+export default function App(){
     return (
         <React.Fragment>
           <NavBar/>
@@ -35,5 +34,4 @@ export default class App extends Component {
           )}/>
         </React.Fragment>
     );
-  }
 }

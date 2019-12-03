@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useState } from 'react'
 import {NavLink, withRouter} from 'react-router-dom';
 import Hamburger from './Hamburger'
 import MobileMenu from './MobileMenu'
@@ -8,22 +9,11 @@ import {connect} from 'react-redux'
 
 import '../../Styles/NavBar.scss'
 
-class Navbar extends Component {
-    constructor(props){
-        super(props);
-        this.showMenu = this.showMenu.bind(this);
-        this.state = {
-            show: false,
-            prevScrollpos: window.pageYOffset,
-            visible: true
-        }
+const Navbar = props => {
+    const [show, setShow] = useState(false);
+    const showMenu = () => {
+        setShow(!show);
     }
-    showMenu(){
-        this.setState({
-            show: !this.state.show
-        });
-    }
-    render() {
             return (
                 <React.Fragment>
                     <nav className="Nav">
@@ -33,30 +23,29 @@ class Navbar extends Component {
                             </div>
                             <div className="Nav-Elements-Flex">
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/About">
-                                    {this.props.language ? ("About"):("Acerca")}
+                                    {props.language ? ("About"):("Acerca")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Resume">
-                                    {this.props.language ? ("Resume"):("Hoja de Vida")}
+                                    {props.language ? ("Resume"):("Hoja de Vida")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Projects">
-                                    {this.props.language ? ("Projects"):("Proyectos")}
+                                    {props.language ? ("Projects"):("Proyectos")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Contact">
-                                    {this.props.language ? ("Contact"):("Contactame")}
+                                    {props.language ? ("Contact"):("Contactame")}
                                 </NavLink>
-                                {this.props.language ? 
-                                    (<button id="Language-button" onClick={() => this.props.changeSpanish()}>ENG</button>)
+                                {props.language ? 
+                                    (<button id="Language-button" onClick={() => props.changeSpanish()}>ENG</button>)
                                 :
-                                    (<button id="Language-button" onClick={() => this.props.changeEnglish()}>ESP</button>)
+                                    (<button id="Language-button" onClick={() => props.changeEnglish()}>ESP</button>)
                                 }
-                                <button id="Mobile-Menu" onClick={this.showMenu}><Hamburger showX={this.state.show} /></button>
+                                <button id="Mobile-Menu" onClick={showMenu}><Hamburger showX={show} /></button>
                             </div>
                         </div>
                     </nav>
-                    <MobileMenu onClose={this.showMenu} show={this.state.show} />
+                    <MobileMenu onClose={showMenu} show={show} />
                 </React.Fragment>
             )
-    }
 }
 function mapStatetoProps({language}){
     return {language};
