@@ -1,9 +1,11 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { useSelector } from 'react-redux'
 
 import '../../Styles/ProjectCard.scss'
 
-const ProjectCard = props => {
+export default function ProjectCard(props){
+
+    const Lang = useSelector(state => state.language);
         return (
             <div>
                 <div id={props.ident} className="Project-Card">
@@ -19,9 +21,9 @@ const ProjectCard = props => {
                                         <p>{props.description}</p>
                                     </div>
                                     <div className="Project-Card-Footer">
-                                        {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                        {Lang ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                         <div>{props.technologies}</div>
-                                        {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                        {Lang ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                         >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                         >Ver Proyecto</a>)}
                                     </div>
@@ -36,9 +38,9 @@ const ProjectCard = props => {
                                             <p>{props.description}</p>
                                         </div>
                                         <div className="Project-Card-Footer">
-                                            {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                            {Lang ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                             <div>{props.technologies}</div>
-                                            {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                            {Lang ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                             >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                             >Ver Proyecto</a>)}
                                         </div>
@@ -62,9 +64,9 @@ const ProjectCard = props => {
                                 <p>{props.description}</p>
                             </div>
                             <div className="Project-Card-Footer">
-                                {props.language ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
+                                {Lang ? (<h3>Technologies</h3>) : (<h3>Tecnologias</h3>)}
                                 <div>{props.technologies}</div>
-                                {props.language ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
+                                {Lang ? (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                 >View Project</a>) : (<a href={props.repo} target="_blank" rel="noopener noreferrer"
                                 >Ver Proyecto</a>)}
                             </div>
@@ -74,7 +76,3 @@ const ProjectCard = props => {
             </div>
         )
 }
-function mapStatetoProps({language}){
-    return {language};
-}
-export default connect(mapStatetoProps)(ProjectCard);

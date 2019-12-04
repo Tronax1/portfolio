@@ -3,14 +3,15 @@ import { useState } from 'react'
 import {NavLink, withRouter} from 'react-router-dom';
 import Hamburger from './Hamburger'
 import MobileMenu from './MobileMenu'
-import {changeEnglish} from '../../actions'
-import {changeSpanish} from '../../actions'
-import {connect} from 'react-redux'
+import {changeEnglish, changeSpanish} from '../../actions'
+import { useDispatch, useSelector } from 'react-redux'
 
 import '../../Styles/NavBar.scss'
 
-const Navbar = props => {
+function Navbar() {
     const [show, setShow] = useState(false);
+    const Lang = useSelector(state => state.language);
+    const dispatch = useDispatch();
     const showMenu = () => {
         setShow(!show);
     }
@@ -23,21 +24,21 @@ const Navbar = props => {
                             </div>
                             <div className="Nav-Elements-Flex">
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/About">
-                                    {props.language ? ("About"):("Acerca")}
+                                    {Lang ? ("About"):("Acerca")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Resume">
-                                    {props.language ? ("Resume"):("Hoja de Vida")}
+                                    {Lang ? ("Resume"):("Hoja de Vida")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Projects">
-                                    {props.language ? ("Projects"):("Proyectos")}
+                                    {Lang ? ("Projects"):("Proyectos")}
                                 </NavLink>
                                 <NavLink activeClassName="active-selected" className="Nav-Elements" id="Desktop-Elements" to="/Contact">
-                                    {props.language ? ("Contact"):("Contactame")}
+                                    {Lang ? ("Contact"):("Contactame")}
                                 </NavLink>
-                                {props.language ? 
-                                    (<button id="Language-button" onClick={() => props.changeSpanish()}>ENG</button>)
+                                {Lang ? 
+                                    (<button id="Language-button" onClick={() => dispatch(changeSpanish())}>ENG</button>)
                                 :
-                                    (<button id="Language-button" onClick={() => props.changeEnglish()}>ESP</button>)
+                                    (<button id="Language-button" onClick={() => dispatch(changeEnglish())}>ESP</button>)
                                 }
                                 <button id="Mobile-Menu" onClick={showMenu}><Hamburger showX={show} /></button>
                             </div>
@@ -47,7 +48,4 @@ const Navbar = props => {
                 </React.Fragment>
             )
 }
-function mapStatetoProps({language}){
-    return {language};
-}
-export default withRouter(connect(mapStatetoProps, {changeEnglish, changeSpanish})(Navbar));
+export default withRouter(Navbar);

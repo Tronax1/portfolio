@@ -1,20 +1,22 @@
 import React from 'react'
 import { useEffect } from 'react'
 import SampleImage from './pangolin6.jpg'
-import {connect} from 'react-redux'
+import { useSelector } from 'react-redux'
 import Footer from '../Footer/Footer'
 
 import '../../Styles/About.scss'
 
-const About = props => {
+export default function About(props){
+
+    const Lang = useSelector(state => state.language);
     useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
                 <div className="About-Content">
-                    <h1>{props.language ? ("About Me") : ("Acerca de Mi")}</h1>
+                    <h1>{Lang ? ("About Me") : ("Acerca de Mi")}</h1>
                     <div className="Content-Flex">
                         <img src={SampleImage} alt="" />
-                        {props.language ? 
+                        {Lang ? 
                             (<p><strong>I am a self taught web developer with a strong background in object oriented programming.
                             I also like to play chess and learn new technologies during my free time.</strong>
                             </p>)
@@ -29,7 +31,3 @@ const About = props => {
             </div>
         )
 }
-function mapStatetoProps({ language }) {
-    return { language };
-}
-export default connect(mapStatetoProps)(About);

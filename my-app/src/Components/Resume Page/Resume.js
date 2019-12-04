@@ -7,28 +7,30 @@ import CV from './CV Jorge Villarreal.pdf'
 import CVSpa from './CV Jorge Villarreal SPA.pdf'
 import Footer from '../Footer/Footer'
 
-import {connect} from 'react-redux'
+import { useSelector } from 'react-redux'
 
 import '../../Styles/Resume.scss'
 
-const Resume = props => {
+export default function Resume(props){
+
+    const Lang = useSelector(state => state.language);
     useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
                 <div className="Resume-card-flex">
                     {
-                        props.language ? 
+                        Lang ? 
                             (<a href={CV} download="CV Jorge Villarreal.pdf">Download Resume</a>)
                             : 
                             (<a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar Hoja de Vida</a>)
                     }
                     <ResumeCard header={
-                        props.language ? ("Education"):("Educación")
+                        Lang ? ("Education"):("Educación")
                     } ident="p-1" content={
                         <ResumeSubCard information={
                             <div className="Education-Margin">
                                 {
-                                    props.language ?
+                                    Lang ?
                                         (
                                             <p><strong>University of South Florida </strong>
                                             Expected December 2019<br />
@@ -47,7 +49,7 @@ const Resume = props => {
                         } />
                     } />
                     <ResumeCard header={
-                        props.language ? ("Skills"):("Habilidades")
+                        Lang ? ("Skills"):("Habilidades")
                     } ident="p-2" content={
                         <div className="Sub-Cards-Flex">
                             <ResumeSubCard information={
@@ -66,7 +68,7 @@ const Resume = props => {
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                            <span id="Skill-icons">{props.language ? ("Languages:"):("Lenguajes:")}</span>
+                            <span id="Skill-icons">{Lang ? ("Languages:"):("Lenguajes:")}</span>
                                     <span id="Skill-icons">JavaScript</span>
                                     <span id="Skill-icons">C/C++</span>
                                     <span id="Skill-icons">Java</span>
@@ -84,7 +86,7 @@ const Resume = props => {
                             } />
                             <ResumeSubCard information={
                                 <div className="Skills-flex">
-                                    <span id="Skill-icons">{props.language ? ("Databases:") : ("Base de datos:")}</span>
+                                    <span id="Skill-icons">{Lang ? ("Databases:") : ("Base de datos:")}</span>
                                     <span id="Skill-icons">MongoDB</span>
                                     <span id="Skill-icons">NoSQL</span>
                                 </div>
@@ -99,12 +101,12 @@ const Resume = props => {
                         </div>
                     } />
                     <ResumeCard header={
-                        props.language ? ("Experience"):("Experiencia")
+                        Lang ? ("Experience"):("Experiencia")
                     } ident="p-3" content={
                         <ResumeSubCard information={
                             <div className="Experience-Margin">
                                 {
-                                    props.language ? 
+                                    Lang ? 
                                         (
                                             <p><strong>Programming Tutor </strong><br />05/2017 to 08/2017<br /> Colegio Albania–Mushaisa,
                                             La Guajira <ul>
@@ -148,7 +150,3 @@ const Resume = props => {
             </div>
         )
 }
-function mapStatetoProps({language}){
-    return {language};
-}
-export default connect(mapStatetoProps)(Resume);

@@ -1,12 +1,15 @@
 import React from 'react'
 import { useEffect } from 'react'
 import ProjectCard from './ProjectCard'
-import {connect} from 'react-redux'
+import { useSelector} from 'react-redux'
 import Footer from '../Footer/Footer'
 import ProjectInfo from './ProjectInfo'
 import '../../Styles/Projects.scss'
 
-const Projects = props => {
+export default function Projects(props){
+
+    const Lang = useSelector(state => state.language);
+
     useEffect(() => window.scrollTo(0, 0), props.location);
         return (
             <div className="page">
@@ -14,13 +17,13 @@ const Projects = props => {
                     {ProjectInfo.map((item, i)=>(
                         <ProjectCard key={i} projImg={item.imag} ident={item.ident}
                             title={
-                                props.language ?
+                                Lang ?
                                     (item.title[0])
                                     :
                                     (item.title[1])
                             }
                             description={
-                                props.language ?
+                                Lang ?
                                     (item.description[0])
                                     :
                                     (item.description[1])
@@ -32,7 +35,3 @@ const Projects = props => {
             </div>
         )
 }
-function mapStatetoProps({language}){
-    return {language};
-}
-export default connect(mapStatetoProps)(Projects);
