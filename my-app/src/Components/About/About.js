@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import SampleImage from './pangolin6.jpg'
+import SampleImage from './Images/pangolin6.jpg'
 import { useSelector } from 'react-redux'
 import Footer from '../Footer/Footer'
 

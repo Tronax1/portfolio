@@ -1,7 +1,7 @@
 import React from 'react';
-import Discord from './Discord.png'
-import ChangeGear from './ChangeGear.png'
-import Money from './moneymanager.jpg'
+import Discord from './Images/Discord.png'
+import ChangeGear from './Images/ChangeGear.png'
+import Money from './Images/moneymanager.jpg'
 
 const seniorTechnologies = <ul style={{ listStyleType: "none" }}>
     <li>React <i className="fab fa-react"></i></li>
