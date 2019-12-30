@@ -32,16 +32,14 @@ export default function Resume(props){
                                 {
                                     Lang ?
                                         (
-                                            <p><strong>University of South Florida </strong>
-                                            Expected December 2019<br />
-                                            B.S. in Computer Engineering<br /><br /> 
+                                            <p><strong>B.S. in Computer Engineering</strong>
+                                                <br />University of South Florida<br /> 
                                             <img id="USF" src={USFlogo} alt="" /></p>
                                         )
                                         :
                                         (
-                                            <p><strong>University of South Florida </strong>
-                                            Esperado Diciembre 2019<br />
-                                            B.S. en Computer Engineering<br /><br /> 
+                                            <p><strong> B.S. en Computer Engineering</strong>
+                                            <br />University of South Florida<br /> 
                                             <img id="USF" src={USFlogo} alt="" /></p>
                                         ) 
                                 }
