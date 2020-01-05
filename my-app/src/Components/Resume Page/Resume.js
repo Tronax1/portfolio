@@ -20,9 +20,9 @@ export default function Resume(props){
                 <div className="Resume-card-flex">
                     {
                         Lang ? 
-                            (<a href={CV} download="CV Jorge Villarreal.pdf">Download Resume</a>)
+                            (<a className = "Download-PDF" href={CV} download="CV Jorge Villarreal.pdf">Download Resume</a>)
                             : 
-                            (<a href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar Hoja de Vida</a>)
+                            (<a className = "Download-PDF" href={CVSpa} download="CV Jorge Villarreal.pdf">Descargar Hoja de Vida</a>)
                     }
                     <ResumeCard header={
                         Lang ? ("Education"):("Educación")

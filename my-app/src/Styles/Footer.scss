@@ -1,14 +1,38 @@
 .Copyright-footer{
-    height: 8vh;
     background-color: #262626;
     color: white;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 3vh;
     box-shadow: 5px 10px 30px #000000;
+    padding-bottom: 2vh;
+}
+.Footer-elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 20vw;
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+.Footer-links{
+    text-decoration: none;
+    text-align: left;
+    color: #e5e5e5;
+    font-size: 1.5rem;
+    &:hover{
+        transition-duration: 0.3s;
+        transition-delay: 0.05s;
+        color: red;
+    }
 }
 @media only screen and (min-width: 768px){
     .Copyright-footer{
-        height: 4vh;
         padding-top: 2vh;
+    }
+    .Footer-elements{
+        width: 50vw;
+        transform: translate(50%);
+        margin-left: initial;
     }
 }
