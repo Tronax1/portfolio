@@ -14,7 +14,7 @@
     width: 100vw;
     left: 0;
     
-    a{
+    .Download-PDF{
       width: 90%;
       height: 8vh;
       text-decoration: none;
@@ -64,6 +64,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: radial-gradient(circle,rgb(218, 213, 213) 5%, #008073);
+  font-family: 'Slabo 27px', serif;
 }
 #USF{
   width: 45vw;
@@ -97,7 +98,7 @@ body{
   .Resume-card-flex{
       width: 98.8vw;
 
-      a{
+      .Download-PDF{
         width: 30vw;
         margin-left: 34vw;
         margin-top: 10vh;
