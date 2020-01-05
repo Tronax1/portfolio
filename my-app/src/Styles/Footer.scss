@@ -13,7 +13,7 @@
     justify-content: space-evenly;
     width: 20vw;
     margin-left: 40%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .Footer-links{
     text-decoration: none;
@@ -21,9 +21,20 @@
     color: #e5e5e5;
     font-size: 1.5rem;
     &:hover{
-        transition-duration: 0.3s;
-        transition-delay: 0.05s;
         color: red;
+    }
+}
+.Footer-Icon-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+.Footer-Icons{
+    &:hover{
+        transform: scale(1.2);
     }
 }
 @media only screen and (min-width: 768px){
@@ -31,6 +42,11 @@
         padding-top: 2vh;
     }
     .Footer-elements{
+        width: 50vw;
+        transform: translate(50%);
+        margin-left: initial;
+    }
+    .Footer-Icon-elements{
         width: 50vw;
         transform: translate(50%);
         margin-left: initial;
